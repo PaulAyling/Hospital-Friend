@@ -1,6 +1,18 @@
+
+/* Colors */
 $color-background-primary:red;
 $color-background-secondary:blue;
 $color-background-tertiary:green;
 
 $color-light:#f8f8ff;
 $color-dark:#313639;
+/* Dimensions */
+$page-kindle-paperwhite-height:1505px;
+$page-kindle-paperwhite-width:1072;
+$page-kindle-paperwhite-img-height:1490px;
+$page-kindle-paperwhite-img-width:1070;
+
+$page-current-view-height:$page-kindle-paperwhite-height;
+$page-current-view-width:$page-kindle-paperwhite-width;
+
+/* Defaults */
