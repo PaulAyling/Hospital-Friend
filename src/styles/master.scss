@@ -1,3 +1,8 @@
+/* This file contains: 
+  - 1. imports to all CSS used in this APP
+  - 2. CSS reset
+  - 3. High level CSS defaults  */
+
 @import 'variables.scss';
 
 @import 'containers.scss';
@@ -10,12 +15,12 @@
 
 @import 'devSandbox.scss';
 
-/* Defaults */
-
+/* CSS reset */
 *{
   padding:0;
   margin:0
 }
+/* High level CSS defaults */
 html{
   font-size:35px;
 }

@@ -1,8 +1,7 @@
 import React, { Fragment } from 'react';
-
 import PageImageFullScreen from '../layout/page-image-fullscreen'
 import Page from '../layout/page'
-import Contents from '../content/contentsTable'
+
 
 export default function(props) {
   return (

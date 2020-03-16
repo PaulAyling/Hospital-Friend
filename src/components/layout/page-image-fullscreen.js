@@ -5,7 +5,7 @@ export default function(props) {
   return (
     <Fragment>
                 <img
-            class='container-img-full'
+            className='container-img-full'
             src={props.src} 
             alt={props.alt}
           />
