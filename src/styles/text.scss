@@ -42,6 +42,13 @@ p {
 
 li {
   list-style-type: none;
+  &.indented{
+    margin: 1rem 3rem 1rem 3rem;
+      &-2{
+        margin: 0.5rem 0rem 0.5rem 5rem;
+      }
+
+  }
   &.bullets {
     font-size: $font-m;
     font-weight: 200;
@@ -56,4 +63,10 @@ li {
       }
     }
   }
+}
+li.checkbox{
+ 
+  list-style-image: url('../images/checkbox.png');
+  
+
 }

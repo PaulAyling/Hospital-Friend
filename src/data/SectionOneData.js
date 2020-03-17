@@ -246,6 +246,7 @@ const SectionOneData = {
             </p>
           </article>
           <article id='Purpose'>
+            <h2>About This Book</h2>
             <h3>The Purpose of this book</h3>
             <p>
               The purpose of this book is to reduce the amount of things you
@@ -307,144 +308,207 @@ const SectionOneData = {
                     <li className='bullets-indented-2'>Drug Log</li>
                     <li className='bullets-indented-2'>Event Log</li>
                   </ul>
-                  <li className='bullets-indented'>
-                    Worksheets to help you stay organized
-                  </li>
+                  <li className='bullets-indented'>Extra resources</li>
                 </ul>
               </li>
             </ul>
           </article>
 
           <article id='Introduction'>
-            <h4>Advice for your Hospital Stay</h4>
-
-            <p>This contains;</p>
-            <ul>
-              <li>Some handy items to make your stay easier.</li>
-              <li>
-                Some information to write down to prevent repeating yourself.
-              </li>
-              <li>
-                Some tips on how to update friends and family and manage doctors
-                meetings.
-              </li>
-            </ul>
-
-            <h4>Diary Section</h4>
+            <h4>Section 1</h4>
             <p>
-              This contains everything you need to document your stay in
-              hospital, it contains the following sections;
+              {' '}
+              <strong>Advice on how to use this book </strong>How to use what
+              parts of this book
             </p>
-            <h4>Timeline Summary</h4>
-            <p className='subHeading3-text'>
-              Intended for you to summarise the main events during your illness
-              to make it easier to communicate with staff about what has
-              happened.
-            </p>
-            <h4>The Daily Diary</h4>
-            <p className='subHeading3-text'>
-              This is a one page per day diary, there is enough pages for 30
-              days. It can be useful to gain perspective on your experience or
-              help if there are difficulties in treatment or diagnosis. For each
-              day there is also a space for the Doctors meeting notes for
-              questions and answers for the doctor.
-            </p>
-          </article>
-          <article id='Introduction'>
-            <h1>Diagnosis Section</h1>
             <p>
-              This section is most useful if your condition is not clear or your
-              symptoms change. If that is the case then you can build a
-              comprehensive record here which may make diagnosis easier.
+              {' '}
+              <strong>Advice for your Hospital Stay </strong>This is a small
+              section designed to give you advice on what to expect and how to
+              manage in Hospital
             </p>
-            <h1>Release Section</h1>
+            <h4>Section 2</h4>
             <p>
-              This includes advice on how to best manage your release from
-              hospital
+              {' '}
+              <strong>Event Timeline </strong>Intended for you to summarise the
+              main events during your illness to make it easier to communicate
+              with staff about what has happened.
             </p>
-            <h1>Extras Section</h1>
             <p>
-              Additional worksheets and resources that you might also find
-              useful{' '}
+              {' '}
+              <strong>Daily Diary</strong>This is a one page per day diary,
+              there is enough pages for 30 days. It can be useful to gain
+              perspective on your experience or help if there are difficulties
+              in treatment or diagnosis. For each day there is also a space for
+              the Doctors meeting notes for questions and answers for the
+              doctor.{' '}
             </p>
-            <ul>
-              <li>Drug Log</li>
-              <li>Events Prior to Illness log</li>
-              <li>Internet resources</li>
-            </ul>
+            <p>
+              {' '}
+              <strong>Diagnosis</strong> This section is most useful if your
+              condition is not clear or your symptoms change. If that is the
+              case then you can build a comprehensive record here which may make
+              diagnosis easier.
+            </p>
+            <p>
+              {' '}
+              <strong>Drug log</strong>Tables for you to record your medication{' '}
+            </p>
+            <p>
+              {' '}
+              <strong>Extra Resources </strong>Other materials that may be
+              helpful
+            </p>
           </article>
           <section id='content'>
-            <p class='pageHeading'>Start Here</p>
+            <article>
+              <h2>Advice for your Hospital Stay</h2>
+              <p>
+                There are three things that you can do now that should make
+                things easier later
+              </p>
+
+              <p>
+                {' '}
+                <strong>1. Buy or get some items. </strong>
+                Some items can make your stay <strong>a lot</strong> more
+                bearable. In this book there is a checklist that I and others
+                have found useful during our stay.
+              </p>
+
+              <p>
+                {' '}
+                <strong>2. Record Basic Information</strong>
+                At hospital you can be asked the same questions over and over.
+                It will make it easier if you log common answers to some common
+                questions here.
+              </p>
+
+              <p>
+                {' '}
+                <strong>3. Key Jobs - Get Help vs DIY </strong>
+                Clearly if you are in hospital you are not at your best! If you
+                can have some tasks done by friends and family it would be a big
+                help. Sometime though, that may not be possible and in that case
+                you need a plan b.
+              </p>
+            </article>
+          </section>
+          <section id='content' class='contents-table'>
+            <p class='pageHeading'>Managing People</p>
             <p>
-              The earlier you can read and start working through these items,
-              the easier you will find things
+              During your stay there are two key tasks you will have to manage.
             </p>
-            <p class='section-intro-text'></p>
-            <p className='subHeading3'>1. Buy or get some items</p>
-            <p className='subHeading3-text'>
-              Some items can make your stay <strong>a lot</strong> more
-              bearable. In this book there is a checklist that I and others have
-              found useful during our stay.
+            <ul>
+              <li>Updating friends and family</li>
+              <li>Managing the Doctor Whirlwind</li>
+            </ul>
+
+            <p className='subHeading2 mgn-top'>Updating friends and family</p>
+            <p>
+              Depending on your location and who needs updating providing
+              updates on your condition can be hard work. If you are unclear or
+              incorrect it can lead to a lot of extra time and stress clarifying
+              things. For everyones well being it is important that this is done
+              quickly and effectively.
             </p>
-            <p className='subHeading3'>2. Record Basic Information</p>
-            <p className='subHeading3-text'>
-              At hospital you can be asked the same questions over and over. It
-              will make it easier if you log common answers to some common
-              questions here.
+
+            <p>
+              A good way of providing updates is a group text, email or whatsapp
+              message sent out daily. You should also let at least one person
+              know how they can contact the hospital ward directly to get
+              updates if you are unavailable.
             </p>
-            <p className='subHeading3'>3. Key Jobs - Get Help vs DIY</p>
-            <p className='subHeading3-text'>
-              Clearly if you are in hospital you are not at your best! If you
-              can have some tasks done by friends and family it would be a big
-              help. Sometime though, that may not be possible and in that case
-              you need a plan b.
+
+            <p>
+              A better way, if you can, is to have someone else handle the
+              communication and send out daily updates on your behalf.{' '}
             </p>
           </section>
           <section id='content' class='contents-table'>
-            <p class='pageHeading'>Item Checklist</p>
+            <p class='pageHeading'>Managing Doctor Whirlwind</p>
+            <p>
+              Doctors are very busy and it is common for doctors to see you
+              briefly and after that they may be unavailable for the rest of the
+              day. It is easy to finish chatting with a doctor wishing you'd
+              asked something else or forget what was said. This is where a
+              system can help you.
+            </p>
+
+            <p>
+              <strong>The best system </strong>
+              Use the "Doctors meetings notes" section of the diary in this book
+              to prepare for the meeting beforehand and then use it to ensure
+              you don't forget the answers.
+            </p>
+            <p>
+              <strong>Getting help from friends or family: </strong>
+              For important meetings having someone attend in person or by phone
+              can be very helpful to ensure the right questions are asked and
+              correct notes are taken. This could be someone you know or a
+              professional. If you have someone in mind it is a good idea to ask
+              them now before you need them.
+            </p>
+
+            <p>
+              <strong>Getting help from a patients advocate:</strong>
+              Patients advocates are professionals that can help you to
+              understand the doctor and ask questions on your behalf. Depending
+              on where you are they may be offered for free or be hired
+              privately.
+            </p>
+          </section>
+
+
+
+
+          <section id='content' class='contents-table'>
+            <h3>Item Checklist</h3>
             <p>A few items that could help you stay</p>
             <ul>
-              <li>
+              <li className='bullets'>
                 Electrical Items
                 <ul>
-                  <li>Phone</li>
-                  <li>Phone Charger</li>
-                  <li>Laptop or iPad</li>
+                  <li className='indented-2 '><i class="large material-icons">check_box_outline_blank</i> Phone</li>
+                  <li className='indented-2'><i class="large material-icons">check_box_outline_blank</i>Phone Charger</li>
+                  <li className='indented-2'><i class="large material-icons">check_box_outline_blank</i>Laptop or iPad</li>
                 </ul>
               </li>
-              <li>
+              <li className='bullets'>
                 Get better sleep
                 <ul>
-                  <li>Face-mask</li>
-                  <li>Earplugs</li>
+                  <li className='indented-2'><i class="large material-icons">check_box_outline_blank</i>Face-mask</li>
+                  <li className='indented-2'><i class="large material-icons">check_box_outline_blank</i>Earplugs</li>
                 </ul>
               </li>
-              <li>
+              <li className='bullets'>
                 Bring some clothes
                 <ul>
-                  <li>Loose fitting underwear</li>
-                  <li>T-shirts</li>
-                  <li>Track suit bottoms</li>
+                  <li className='indented-2'>
+                  <i class="large material-icons">check_box_outline_blank</i>Loose fitting underwear
+                  </li>
+                  <li className='indented-2'><i class="large material-icons">check_box_outline_blank</i>T-shirts</li>
+                  <li className='indented-2'><i class="large material-icons">check_box_outline_blank</i>Track suit bottoms</li>
                 </ul>
               </li>
-              <li>
+              <li className='bullets'>
                 Some food
                 <ul>
-                  <li>Cereal bars</li>
-                  <li>Chocolate</li>
+                  <li className='indented-2'><i class="large material-icons">check_box_outline_blank</i>Cereal bars</li>
+                  <li className='indented-2'><i class="large material-icons">check_box_outline_blank</i>Chocolate</li>
                 </ul>
               </li>
-              <li>
+              <li className='bullets'>
                 Stationary
                 <ul>
-                  <li>Pen</li>
-                  <li>Paper</li>
+                  <li className='indented-2'><i class="large material-icons">check_box_outline_blank</i>Pen</li>
+                  <li className='indented-2'><i class="large material-icons">check_box_outline_blank</i>Paper</li>
                 </ul>
               </li>
             </ul>
           </section>
           <section id='content' class='contents-table'>
-            <p class='pageHeading'>Useful Information</p>
+            <h3>Useful Information</h3>
             <p>
               If you are asked for information, just go to this book afterwards
               and fill it in. That way you won't have to do it again.
@@ -581,70 +645,7 @@ const SectionOneData = {
               </row>
             </div>
           </section>
-          <section id='content' class='contents-table'>
-            <p class='pageHeading'>Managing People</p>
-            <p>
-              During your stay there are two key tasks you will have to manage.
-            </p>
-            <ul>
-              <li>Updating friends and family</li>
-              <li>Managing the Doctor Whirlwind</li>
-            </ul>
-
-            <p className='subHeading2 mgn-top'>Updating friends and family</p>
-            <p>
-              Depending on your location and who needs updating providing
-              updates on your condition can be hard work. If you are unclear or
-              incorrect it can lead to a lot of extra time and stress clarifying
-              things. For everyones well being it is important that this is done
-              quickly and effectively.
-            </p>
-
-            <p>
-              A good way of providing updates is a group text, email or whatsapp
-              message sent out daily. You should also let at least one person
-              know how they can contact the hospital ward directly to get
-              updates if you are unavailable.
-            </p>
-
-            <p>
-              A better way, if you can, is to have someone else handle the
-              communication and send out daily updates on your behalf.{' '}
-            </p>
-          </section>
-          <section id='content' class='contents-table'>
-            <p class='pageHeading'>Managing Doctor Whirlwind</p>
-            <p>
-              Doctors are very busy and it is common for doctors to see you
-              briefly and after that they may be unavailable for the rest of the
-              day. It is easy to finish chatting with a doctor wishing you'd
-              asked something else or forget what was said. This is where a
-              system can help you.
-            </p>
-
-            <p>
-              <strong>The best system </strong>
-              Use the "Doctors meetings notes" section of the diary in this book
-              to prepare for the meeting beforehand and then use it to ensure
-              you don't forget the answers.
-            </p>
-            <p>
-              <strong>Getting help from friends or family: </strong>
-              For important meetings having someone attend in person or by phone
-              can be very helpful to ensure the right questions are asked and
-              correct notes are taken. This could be someone you know or a
-              professional. If you have someone in mind it is a good idea to ask
-              them now before you need them.
-            </p>
-
-            <p>
-              <strong>Getting help from a patients advocate:</strong>
-              Patients advocates are professionals that can help you to
-              understand the doctor and ask questions on your behalf. Depending
-              on where you are they may be offered for free or be hired
-              privately.
-            </p>
-          </section>
+          
         </Fragment>
       )
     }
