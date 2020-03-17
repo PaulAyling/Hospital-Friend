@@ -3,11 +3,11 @@ import SectionOne from '../components/layout/section-one';
 
 
 const RenderMobi = (props) => {
-  const sectionOneData = props.SectionOneData;
+  const Content = props.content;
   const render = props.Render
   return (
     <Fragment>
-      <SectionOne render={render} content={sectionOneData} />
+      <SectionOne render={render} content={Content} />
     </Fragment>
   );
 };

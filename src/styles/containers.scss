@@ -23,10 +23,15 @@
     &-row {
       display: flex;
       flex-direction: row;
+      justify-content: space-between;
     }
   }
   &-img-full {
     width: 100%;
     height: $page-kindle-paperwhite-img-height
   }
+}
+.testHeader{
+  color:green;
+  font-size:10rem;
 }
