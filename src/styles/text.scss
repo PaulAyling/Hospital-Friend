@@ -9,7 +9,6 @@ h1 {
 h2 {
   font-size: 5rem;
   text-align: center;
-
 }
 
 h3 {
@@ -20,8 +19,12 @@ h3 {
 }
 h4 {
   font-size: 2rem;
-  margin: 0rem 0rem 1rem 0.5rem;
-  font-weight: 300;
+  margin: 2rem 0rem 0.3rem 0rem;
+  font-weight: 400;
+  &.contents {
+    margin: 1rem 0rem 0.5rem 0.5rem;
+    font-weight: 300;
+  }
 }
 h5 {
   font-size: 1.5rem;
@@ -33,17 +36,24 @@ h5 {
 }
 p {
   font-size: 1.5rem;
-  margin: 0rem 1rem 3rem 0rem;
+  margin: 0rem 0rem 2rem 0rem;
   font-weight: 200;
 }
 
 li {
   list-style-type: none;
   &.bullets {
-    font-size: $font-body;
+    font-size: $font-m;
     font-weight: 200;
     margin: 1rem 0rem 1rem 3rem;
-    list-style-type: circle;
-    color: green;
+    list-style-type: disc;
+    &-indented {
+      margin: 1rem 3rem 1rem 3rem;
+      &-2 {
+        margin: 0.5rem 0rem 0.5rem 5rem;
+        font-size: $font-s;
+        font-weight: 200;
+      }
+    }
   }
 }
