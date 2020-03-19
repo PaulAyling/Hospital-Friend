@@ -5,8 +5,13 @@ const SectionOneData = {
       id: 0,
       sectionName: 'Front Cover',
       containerStyling: '',
-      article:
-        'http://paulayling.me/wp-content/uploads/2019/02/hHandbookCover.png'
+      article: (
+        <img
+          className='container-img-full'
+          src='http://paulayling.me/wp-content/uploads/2019/02/hHandbookCover.png'
+          alt='Front cover'
+        />
+      )
     },
     {
       id: 1,
@@ -210,13 +215,14 @@ const SectionOneData = {
       sectionName: 'Section 1',
       article: (
         <Fragment>
-          <h1>Section 1</h1>
-
-          <img
-            className='container-book-divider-img'
-            src='http://paulayling.me/wp-content/uploads/2019/02/hhandbook-Section-Divider.jpg'
-            alt='Section 2 divider'
-          />
+          <div className='container-book-divider container-flex-column-spacebetween'>
+            <h1>Section 1</h1>
+            <img
+              className='container-book-divider-img'
+              src='http://paulayling.me/wp-content/uploads/2019/02/hhandbook-Section-Divider.jpg'
+              alt='Section 2 divider'
+            />
+          </div>
         </Fragment>
       )
     },

@@ -1,15 +1,15 @@
-import React, {Fragment} from 'react';
-import SectionOne from '../components/layout/section-one';
+import React, { Fragment } from 'react';
+import Book from '../components/layout/book';
 
-
-const RenderMobi = (props) => {
-  const Data = props.data;
-  const render = props.Render
+const RenderMobi = props => {
   return (
-    <main id="mobi-render" className="container-render-mobi">
-
-      <SectionOne render={render} data={Data} />
-    </main>
+    <Fragment>
+      <Book
+        pageSize='page-size-mobi'
+        pageWidth='page-width-moby'
+        data={props.data}
+      />
+    </Fragment>
   );
 };
 export default RenderMobi;

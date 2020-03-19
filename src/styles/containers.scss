@@ -1,28 +1,17 @@
 
 
-.page {
-  background: white;
-  display: block;
-  margin: 0 auto;
-  min-width: $page-current-view-width;
-  max-width: $page-current-view-width;
-  min-height: $page-current-view-height;
-  max-height: $page-current-view-height;
 
-  &-border {
 
-    min-width: 1070px;
-    max-width: 1070px;
-    min-height: $page-current-view-height;
+.page-size{
+  &-mobi{
+    min-height: $page-kindle-paperwhite-height;
+    max-height: $page-kindle-paperwhite-height;
+    min-width: $page-kindle-paperwhite-width;
+    max-width: $page-kindle-paperwhite-width;
   }
 }
 
 .container {
-  &-render-mobi{
-    display: flex;
-    flex-direction: row;
-    width:$page-current-view-width;
-  }
   &-flex {
     &-column{
       display: flex;
@@ -30,6 +19,7 @@
       &-spacebetween{
         display: flex;
         flex-direction: column;
+        
         justify-content: space-between;
       }
     }
@@ -50,10 +40,7 @@
     min-width:$page-current-view-width;
   }
   &-book-divider{
-    width:100%;
-    min-height:  ( $page-current-view-height);
-    padding-top:3rem;
-    box-sizing: border-box;
+    height:1000px;
     &-img{
       width:100%;
       max-height: ( $page-current-view-height - 700);
