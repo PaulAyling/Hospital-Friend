@@ -1,13 +1,14 @@
 import React, { Fragment } from 'react';
 
-
 export default function(props) {
-  const Content = props.content;
-  const ContentNumber = parseInt(props.contentNumber);
-  return (
-        <section className="border-3">
-        {Content[ContentNumber].article}
-        </section>
 
+  // const intId = parseInt(id);
+
+
+  return (
+    <section  id={'page.js: '+props.description} className='padding-3-large-top container-single-page' >
+
+   {props.data[props.sectionNumber].article}
+    </section>
   );
 }

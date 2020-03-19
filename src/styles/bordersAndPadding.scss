@@ -1,3 +1,16 @@
-.border-3{
-  padding:3rem;
+
+.border{
+  &-red{border:solid 1px red;}
+  &-blue{border:solid 1px blue}
+}
+
+.padding{
+  &-3{
+      padding:3rem;
+      box-sizing: border-box;
+  }
+  &-3-large-top{
+    padding: 5rem 3rem 3rem 3rem;
+    box-sizing: border-box;
+  }
 }

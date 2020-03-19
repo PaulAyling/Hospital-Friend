@@ -1,220 +1,232 @@
 import React, { Fragment } from 'react';
 const SectionOneData = {
-  content: [
+  data: [
     {
-      id: 1,
+      id: 0,
       sectionName: 'Front Cover',
+      containerStyling: '',
       article:
         'http://paulayling.me/wp-content/uploads/2019/02/hHandbookCover.png'
     },
     {
       id: 1,
       sectionName: 'Contents',
+      containerStyling: 'padding-3 ',
       article: (
         <Fragment>
-          <h2 className=''>Contents</h2>
-          <section className=''>
-            <ul>
-              <li>
+          <h1 className=''>Contents</h1>
+          <ul>
+            <li>
+              <div>
+                <h3 className='contents-section'>Section 1</h3>
+              </div>
+            </li>
+            <li>
+              <div className='container-flex-row bdr-bottom-gray'>
                 <div>
-                  <h3 className='text-align-center'>Section 1</h3>
+                  <h4 className='contents-item'>It Started in an Ambulance</h4>
                 </div>
-              </li>
-              <li>
-                <div className='container-flex-row bdr-bottom-gray'>
-                  <div>
-                    <h4 className='contents-item'>
-                      It Started in an Ambulance
-                    </h4>
-                  </div>
-                  <div>
-                    <h4 className='text-align-right'>1</h4>
-                  </div>
+                <div>
+                  <h4 className='text-align-right'>1</h4>
                 </div>
-              </li>
-              <li>
-                <div className='container-flex-row bdr-bottom-gray'>
-                  <div>
-                    <h4 className='contents-item'>About this book</h4>
-                  </div>
-                  <div>
-                    <h4 className='contents-page-number'>1</h4>
-                  </div>
+              </div>
+            </li>
+            <li>
+              <div className='container-flex-row bdr-bottom-gray'>
+                <div>
+                  <h4 className='contents-item'>About this book</h4>
                 </div>
-              </li>
-              <li>
-                <div className='container-flex-row'>
-                  <div>
-                    <h5 className='contents-item'>Purpose of this book</h5>
-                  </div>
-                  <div>
-                    <h5 className='contents-page-number'>1</h5>
-                  </div>
+                <div>
+                  <h4 className='contents-page-number'>1</h4>
                 </div>
-              </li>
-              <li>
-                <div className='container-flex-row'>
-                  <div>
-                    <h5 className='contents-item'>Whats in the book</h5>
-                  </div>
-                  <div>
-                    <h5 className='contents-page-number'>1</h5>
-                  </div>
+              </div>
+            </li>
+            <li>
+              <div className='container-flex-row'>
+                <div>
+                  <h5 className='contents-item'>Purpose of this book</h5>
                 </div>
-              </li>
-              <li>
-                <div className='container-flex-row'>
-                  <div>
-                    <h5 className='contents-item'>How to use this book</h5>
-                  </div>
-                  <div>
-                    <h5 className='contents-page-number'>1</h5>
-                  </div>
+                <div>
+                  <h5 className='contents-page-number'>1</h5>
                 </div>
-              </li>
-              <li>
-                <div className='container-flex-row bdr-bottom-gray'>
-                  <div>
-                    <h4 className='contents-item'>
-                      Advice for your Hospital Stay
-                    </h4>
-                  </div>
-                  <div>
-                    <h4 className='contents-page-number'>1</h4>
-                  </div>
+              </div>
+            </li>
+            <li>
+              <div className='container-flex-row'>
+                <div>
+                  <h5 className='contents-item'>Whats in the book</h5>
                 </div>
-              </li>
-              <li>
-                <div className='container-flex-row'>
-                  <div>
-                    <h5 className='contents-item'>Things to bring</h5>
-                  </div>
-                  <div>
-                    <h5 className='contents-page-number'>1</h5>
-                  </div>
+                <div>
+                  <h5 className='contents-page-number'>1</h5>
                 </div>
-              </li>
-              <li>
-                <div className='container-flex-row'>
-                  <div>
-                    <h5 className='contents-item'>Managing People</h5>
-                  </div>
-                  <div>
-                    <h5 className='contents-page-number'>1</h5>
-                  </div>
+              </div>
+            </li>
+            <li>
+              <div className='container-flex-row'>
+                <div>
+                  <h5 className='contents-item'>How to use this book</h5>
                 </div>
-              </li>
-              <li>
-                <div className='container-flex-row'>
-                  <div>
-                    <h5 className='contents-item'>Hospital Release</h5>
-                  </div>
-                  <div>
-                    <h5 className='contents-page-number'>1</h5>
-                  </div>
+                <div>
+                  <h5 className='contents-page-number'>1</h5>
                 </div>
-              </li>
-            </ul>
+              </div>
+            </li>
+            <li>
+              <div className='container-flex-row bdr-bottom-gray'>
+                <div>
+                  <h4 className='contents-item'>
+                    Advice for your Hospital Stay
+                  </h4>
+                </div>
+                <div>
+                  <h4 className='contents-page-number'>1</h4>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div className='container-flex-row'>
+                <div>
+                  <h5 className='contents-item'>Things to bring</h5>
+                </div>
+                <div>
+                  <h5 className='contents-page-number'>1</h5>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div className='container-flex-row'>
+                <div>
+                  <h5 className='contents-item'>Managing People</h5>
+                </div>
+                <div>
+                  <h5 className='contents-page-number'>1</h5>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div className='container-flex-row'>
+                <div>
+                  <h5 className='contents-item'>Hospital Release</h5>
+                </div>
+                <div>
+                  <h5 className='contents-page-number'>1</h5>
+                </div>
+              </div>
+            </li>
+          </ul>
 
-            <ul>
-              <li>
+          <ul>
+            <li>
+              <div>
+                <h3 className='contents-section'>Section 2</h3>
+              </div>
+            </li>
+            <li>
+              <div className='container-flex-row bdr-bottom-gray'>
                 <div>
-                  <h3 className='text-align-center'>Section 2</h3>
+                  <h4 className='contents-item'>Your Information</h4>
                 </div>
-              </li>
-              <li>
-                <div className='container-flex-row bdr-bottom-gray'>
-                  <div>
-                    <h4 className='contents-item'>Your Information</h4>
-                  </div>
-                  <div>
-                    <h4 className='contents-page-number'>1</h4>
-                  </div>
+                <div>
+                  <h4 className='contents-page-number'>1</h4>
                 </div>
-              </li>
-              <li>
-                <div className='container-flex-row bdr-bottom-gray'>
-                  <div>
-                    <h4 className='contents-item'>Logs</h4>
-                  </div>
-                  <div>
-                    <h4 className='contents-page-number'>1</h4>
-                  </div>
+              </div>
+            </li>
+            <li>
+              <div className='container-flex-row bdr-bottom-gray'>
+                <div>
+                  <h4 className='contents-item'>Logs</h4>
                 </div>
-              </li>
-              <li>
-                <div className='container-flex-row'>
-                  <div>
-                    <h5 className='contents-item'>Timeline Summary</h5>
-                  </div>
-                  <div>
-                    <h5 className='contents-page-number'>1</h5>
-                  </div>
+                <div>
+                  <h4 className='contents-page-number'>1</h4>
                 </div>
-              </li>
-              <li>
-                <div className='container-flex-row'>
-                  <div>
-                    <h5 className='contents-item'>Daily Diary</h5>
-                  </div>
-                  <div>
-                    <h5 className='contents-page-number'>1</h5>
-                  </div>
+              </div>
+            </li>
+            <li>
+              <div className='container-flex-row'>
+                <div>
+                  <h5 className='contents-item'>Timeline Summary</h5>
                 </div>
-              </li>
-              <li>
-                <div className='container-flex-row'>
-                  <div>
-                    <h5 className='contents-item'>Diagnosis</h5>
-                  </div>
-                  <div>
-                    <h5 className='contents-page-number'>1</h5>
-                  </div>
+                <div>
+                  <h5 className='contents-page-number'>1</h5>
                 </div>
-              </li>
-              <li>
-                <div className='container-flex-row'>
-                  <div>
-                    <h5 className='contents-item'>Drug Log</h5>
-                  </div>
-                  <div>
-                    <h5 className='contents-page-number'>1</h5>
-                  </div>
+              </div>
+            </li>
+            <li>
+              <div className='container-flex-row'>
+                <div>
+                  <h5 className='contents-item'>Daily Diary</h5>
                 </div>
-              </li>
-              <li>
-                <div className='container-flex-row'>
-                  <div>
-                    <h5 className='contents-item'>Event Log</h5>
-                  </div>
-                  <div>
-                    <h5 className='contents-page-number'>1</h5>
-                  </div>
+                <div>
+                  <h5 className='contents-page-number'>1</h5>
                 </div>
-              </li>
-              <li>
-                <div className='container-flex-row bdr-bottom-gray'>
-                  <div className=''>
-                    <h4 className='contents-item'>Thanks</h4>
-                  </div>
-                  <div>
-                    <h4 className='contents-page-number'>1</h4>
-                  </div>
+              </div>
+            </li>
+            <li>
+              <div className='container-flex-row'>
+                <div>
+                  <h5 className='contents-item'>Diagnosis</h5>
                 </div>
-              </li>
-            </ul>
-          </section>
+                <div>
+                  <h5 className='contents-page-number'>1</h5>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div className='container-flex-row'>
+                <div>
+                  <h5 className='contents-item'>Drug Log</h5>
+                </div>
+                <div>
+                  <h5 className='contents-page-number'>1</h5>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div className='container-flex-row'>
+                <div>
+                  <h5 className='contents-item'>Event Log</h5>
+                </div>
+                <div>
+                  <h5 className='contents-page-number'>1</h5>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div className='container-flex-row bdr-bottom-gray'>
+                <div className=''>
+                  <h4 className='contents-item'>Thanks</h4>
+                </div>
+                <div>
+                  <h4 className='contents-page-number'>1</h4>
+                </div>
+              </div>
+            </li>
+          </ul>
         </Fragment>
       )
     },
     {
-      id: 1,
-      sectionName: 'Text Content',
+      id: 2,
+      sectionName: 'Section 1',
       article: (
         <Fragment>
-          <article id='Introduction'>
-            <h1>Section 1</h1>
-            <h3>It started in an Ambulance... </h3>
+          <h1>Section 1</h1>
+
+          <img
+            className='container-book-divider-img'
+            src='http://paulayling.me/wp-content/uploads/2019/02/hhandbook-Section-Divider.jpg'
+            alt='Section 2 divider'
+          />
+        </Fragment>
+      )
+    },
+    {
+      id: 3,
+      sectionName: 'Section 1',
+      article: (
+        <Fragment>
+          <article>
+            <h2>It started in an Ambulance... </h2>
 
             <p>
               Recently I found myself in an ambulance travelling across Thailand
@@ -245,7 +257,9 @@ const SectionOneData = {
               as well. This is the reason I wrote this book.
             </p>
           </article>
-          <article id='Purpose'>
+          <article
+            id='1 - About this Book'
+            className='padding-3-large-top  container-new-section'>
             <h2>About This Book</h2>
             <h3>The Purpose of this book</h3>
             <p>
@@ -276,7 +290,7 @@ const SectionOneData = {
             </p>
             <p>A guide to health care or a medical document.</p>
           </article>
-          <article id='Introduction'>
+          <article id='1 - How to use this book' className='padding-3'>
             <h3>How to use this book</h3>
             <p>
               The book is split into sections. The sections contain worksheets
@@ -312,9 +326,7 @@ const SectionOneData = {
                 </ul>
               </li>
             </ul>
-          </article>
 
-          <article id='Introduction'>
             <h4>Section 1</h4>
             <p>
               {' '}
@@ -360,51 +372,15 @@ const SectionOneData = {
               helpful
             </p>
           </article>
-          <section id='content'>
-            <article>
-              <h2>Advice for your Hospital Stay</h2>
-              <p>
-                There are three things that you can do now that should make
-                things easier later
-              </p>
 
-              <p>
-                {' '}
-                <strong>1. Buy or get some items. </strong>
-                Some items can make your stay <strong>a lot</strong> more
-                bearable. In this book there is a checklist that I and others
-                have found useful during our stay.
-              </p>
-
-              <p>
-                {' '}
-                <strong>2. Record Basic Information</strong>
-                At hospital you can be asked the same questions over and over.
-                It will make it easier if you log common answers to some common
-                questions here.
-              </p>
-
-              <p>
-                {' '}
-                <strong>3. Key Jobs - Get Help vs DIY </strong>
-                Clearly if you are in hospital you are not at your best! If you
-                can have some tasks done by friends and family it would be a big
-                help. Sometime though, that may not be possible and in that case
-                you need a plan b.
-              </p>
-            </article>
-          </section>
-          <section id='content' class='contents-table'>
-            <p class='pageHeading'>Managing People</p>
+          <article>
+            <h2>Advice for your Hospital Stay</h2>
             <p>
-              During your stay there are two key tasks you will have to manage.
+              During your stay you will have to keep your friends and family
+              updated and also be talking to doctors.
             </p>
-            <ul>
-              <li>Updating friends and family</li>
-              <li>Managing the Doctor Whirlwind</li>
-            </ul>
 
-            <p className='subHeading2 mgn-top'>Updating friends and family</p>
+            <h4>Updating friends and family</h4>
             <p>
               Depending on your location and who needs updating providing
               updates on your condition can be hard work. If you are unclear or
@@ -424,9 +400,10 @@ const SectionOneData = {
               A better way, if you can, is to have someone else handle the
               communication and send out daily updates on your behalf.{' '}
             </p>
-          </section>
-          <section id='content' class='contents-table'>
-            <p class='pageHeading'>Managing Doctor Whirlwind</p>
+          </article>
+
+          <article id='content' className='padding-3'>
+            <h3>Managing Doctor Whirlwind</h3>
             <p>
               Doctors are very busy and it is common for doctors to see you
               briefly and after that they may be unavailable for the rest of the
@@ -457,57 +434,111 @@ const SectionOneData = {
               on where you are they may be offered for free or be hired
               privately.
             </p>
+          </article>
+        </Fragment>
+      )
+    },
+
+    {
+      id: 4,
+      sectionName: 'Section 2',
+      article: (
+        <Fragment>
+          <section id='section 2 Divider'>
+            <page className='page container-flex-column-spacebetween'>
+              <div>
+                <h1>Section 2</h1>
+              </div>
+              <div>
+                <img
+                  className='page-divider'
+                  src='http://paulayling.me/wp-content/uploads/2019/02/hhandbook-Section-Divider.jpg'
+                  alt='Section 2 divider'
+                />
+              </div>
+            </page>
           </section>
 
-
-
-
-          <section id='content' class='contents-table'>
+          <section id='content' class='padding-3'>
             <h3>Item Checklist</h3>
             <p>A few items that could help you stay</p>
             <ul>
               <li className='bullets'>
                 Electrical Items
                 <ul>
-                  <li className='indented-2 '><i class="large material-icons">check_box_outline_blank</i> Phone</li>
-                  <li className='indented-2'><i class="large material-icons">check_box_outline_blank</i>Phone Charger</li>
-                  <li className='indented-2'><i class="large material-icons">check_box_outline_blank</i>Laptop or iPad</li>
+                  <li className='indented-2 '>
+                    <i class='large material-icons'>check_box_outline_blank</i>{' '}
+                    Phone
+                  </li>
+                  <li className='indented-2'>
+                    <i class='large material-icons'>check_box_outline_blank</i>
+                    Phone Charger
+                  </li>
+                  <li className='indented-2'>
+                    <i class='large material-icons'>check_box_outline_blank</i>
+                    Laptop or iPad
+                  </li>
                 </ul>
               </li>
               <li className='bullets'>
                 Get better sleep
                 <ul>
-                  <li className='indented-2'><i class="large material-icons">check_box_outline_blank</i>Face-mask</li>
-                  <li className='indented-2'><i class="large material-icons">check_box_outline_blank</i>Earplugs</li>
+                  <li className='indented-2'>
+                    <i class='large material-icons'>check_box_outline_blank</i>
+                    Face-mask
+                  </li>
+                  <li className='indented-2'>
+                    <i class='large material-icons'>check_box_outline_blank</i>
+                    Earplugs
+                  </li>
                 </ul>
               </li>
               <li className='bullets'>
                 Bring some clothes
                 <ul>
                   <li className='indented-2'>
-                  <i class="large material-icons">check_box_outline_blank</i>Loose fitting underwear
+                    <i class='large material-icons'>check_box_outline_blank</i>
+                    Loose fitting underwear
                   </li>
-                  <li className='indented-2'><i class="large material-icons">check_box_outline_blank</i>T-shirts</li>
-                  <li className='indented-2'><i class="large material-icons">check_box_outline_blank</i>Track suit bottoms</li>
+                  <li className='indented-2'>
+                    <i class='large material-icons'>check_box_outline_blank</i>
+                    T-shirts
+                  </li>
+                  <li className='indented-2'>
+                    <i class='large material-icons'>check_box_outline_blank</i>
+                    Track suit bottoms
+                  </li>
                 </ul>
               </li>
               <li className='bullets'>
                 Some food
                 <ul>
-                  <li className='indented-2'><i class="large material-icons">check_box_outline_blank</i>Cereal bars</li>
-                  <li className='indented-2'><i class="large material-icons">check_box_outline_blank</i>Chocolate</li>
+                  <li className='indented-2'>
+                    <i class='large material-icons'>check_box_outline_blank</i>
+                    Cereal bars
+                  </li>
+                  <li className='indented-2'>
+                    <i class='large material-icons'>check_box_outline_blank</i>
+                    Chocolate
+                  </li>
                 </ul>
               </li>
               <li className='bullets'>
                 Stationary
                 <ul>
-                  <li className='indented-2'><i class="large material-icons">check_box_outline_blank</i>Pen</li>
-                  <li className='indented-2'><i class="large material-icons">check_box_outline_blank</i>Paper</li>
+                  <li className='indented-2'>
+                    <i class='large material-icons'>check_box_outline_blank</i>
+                    Pen
+                  </li>
+                  <li className='indented-2'>
+                    <i class='large material-icons'>check_box_outline_blank</i>
+                    Paper
+                  </li>
                 </ul>
               </li>
             </ul>
           </section>
-          <section id='content' class='contents-table'>
+          <section id='content' class='padding-3'>
             <h3>Useful Information</h3>
             <p>
               If you are asked for information, just go to this book afterwards
@@ -645,7 +676,6 @@ const SectionOneData = {
               </row>
             </div>
           </section>
-          
         </Fragment>
       )
     }

@@ -1,3 +1,5 @@
+
+
 .page {
   background: white;
   display: block;
@@ -6,6 +8,7 @@
   max-width: $page-current-view-width;
   min-height: $page-current-view-height;
   max-height: $page-current-view-height;
+
   &-border {
 
     min-width: 1070px;
@@ -15,10 +18,20 @@
 }
 
 .container {
+  &-render-mobi{
+    display: flex;
+    flex-direction: row;
+    width:$page-current-view-width;
+  }
   &-flex {
-    &-column {
+    &-column{
       display: flex;
       flex-direction: column;
+      &-spacebetween{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
     }
     &-row {
       display: flex;
@@ -27,11 +40,32 @@
     }
   }
   &-img-full {
-    width: 100%;
-    height: $page-kindle-paperwhite-img-height
+    width:100%;
+    height: ( $page-current-view-height - 4);
   }
-}
-.testHeader{
-  color:green;
-  font-size:10rem;
+  &-pages{
+
+  }
+  &-full-width{
+    min-width:$page-current-view-width;
+  }
+  &-book-divider{
+    width:100%;
+    min-height:  ( $page-current-view-height);
+    padding-top:3rem;
+    box-sizing: border-box;
+    &-img{
+      width:100%;
+      max-height: ( $page-current-view-height - 700);
+      padding-top:3rem;
+      box-sizing: border-box;
+    }
+  }
+  &-single-page{
+    max-height: $page-kindle-paperwhite-img-height;
+    min-height: $page-kindle-paperwhite-img-height;
+    break-before: auto;
+    box-sizing: border-box;
+  }
+
 }

@@ -1,32 +1,43 @@
 import React, { Fragment } from 'react';
-import PageImageFullScreen from '../layout/page-image-fullscreen';
-import Page from '../layout/page';
+import PageImageFullScreen from './page-nopadding';
+import PageBlock from './page-block';
+import Page from './page'
+import PageNoPadding from './page-nopadding'
 
 export default function(props) {
-  const Content = props.content;
+
   return (
     <Fragment>
-      <section className='page'>
-        <div className='page-border'>
-          <article className='container-flex-column'>
-            <PageImageFullScreen
+      <div id="section-one container-flex-column ">
+
+    
+            {/* <PageImageFullScreen
+            render={props.render}
               description='Front Cover'
-              content={Content}
-              contentNumber={0}
+              data={props.data}
+              sectionNumber={0}
+              
             />
             <Page
+            render={props.render}
               description='Contents Page'
-              content={Content}
-              contentNumber={1}
-            />
-            <Page
-              description='Text Section'
-              content={Content}
-              contentNumber={2}
-            />
-          </article>
-        </div>
-      </section>
+              data={props.data}
+              sectionNumber={1}
+            />  */}
+            <PageNoPadding
+            render={props.render}
+              description='Section 1 Divider'
+              data={props.data}
+              sectionNumber={2}
+            /> 
+             {/* <PageBlock
+              description='Section 1'
+              data={props.data}
+              sectionNumber={2}
+            /> */}
+
+
+      </div>
     </Fragment>
   );
 }

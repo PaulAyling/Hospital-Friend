@@ -1,0 +1,9 @@
+@import './variables.scss';
+
+img{
+  &.page-divider{
+    width:$page-kindle-paperwhite-width;
+    align-self:flex-end;
+    
+  }
+}

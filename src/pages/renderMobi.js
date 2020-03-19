@@ -3,12 +3,13 @@ import SectionOne from '../components/layout/section-one';
 
 
 const RenderMobi = (props) => {
-  const Content = props.content;
+  const Data = props.data;
   const render = props.Render
   return (
-    <Fragment>
-      <SectionOne render={render} content={Content} />
-    </Fragment>
+    <main id="mobi-render" className="container-render-mobi">
+
+      <SectionOne render={render} data={Data} />
+    </main>
   );
 };
 export default RenderMobi;

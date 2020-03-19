@@ -1,25 +1,22 @@
 /* JUST IMPORTS , RESTS & MINIMAL DEFAULTS */
 /* CSS reset */
-*{
-  padding:0;
-  margin:0
+* {
+  padding: 0;
+  margin: 0;
 }
 /* High level CSS defaults */
-html{
-  font-size:20px;
+html {
+  font-size: 20px;
 }
 /* NO MORE HERE */
 
+@import './variables.scss';
+@import './containers.scss';
+@import './forms.scss';
+@import './bordersAndPadding.scss';
+@import './text.scss';
+@import './color.scss';
 
-  @import './variables.scss';
-  @import './containers.scss';
-  @import './forms.scss';
-  @import './bordersAndPadding.scss';
-  @import './text.scss';
-  @import './color.scss';
-  
-  @import './customOverrides.scss';
-  
-  @import './devSandbox.scss';
-  
-  
+@import './customOverrides.scss';
+
+@import './devSandbox.scss';
