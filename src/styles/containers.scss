@@ -1,7 +1,4 @@
-
-
-
-
+// Output format Styles
 .page-size{
   &-mobi{
     min-height: $page-kindle-paperwhite-height;
@@ -10,16 +7,25 @@
     max-width: $page-kindle-paperwhite-width;
   }
 }
-
+.page-width{
+    &-mobi{
+      min-width: $page-kindle-paperwhite-width;
+      max-width: $page-kindle-paperwhite-width;
+    }
+  }
+.new-page{
+  page-break-before: always;
+  padding-top:3rem;
+  box-sizing: border-box;
+}
 .container {
   &-flex {
-    &-column{
+    &-column {
       display: flex;
       flex-direction: column;
-      &-spacebetween{
+      &-spacebetween {
         display: flex;
         flex-direction: column;
-        
         justify-content: space-between;
       }
     }
@@ -33,9 +39,6 @@
     width:100%;
     height: ( $page-current-view-height - 4);
   }
-  &-pages{
-
-  }
   &-full-width{
     min-width:$page-current-view-width;
   }
@@ -48,11 +51,4 @@
       box-sizing: border-box;
     }
   }
-  &-single-page{
-    max-height: $page-kindle-paperwhite-img-height;
-    min-height: $page-kindle-paperwhite-img-height;
-    break-before: auto;
-    box-sizing: border-box;
-  }
-
 }

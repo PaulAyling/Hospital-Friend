@@ -5,20 +5,15 @@ const SectionOneData = {
       id: 0,
       sectionName: 'Front Cover',
       containerStyling: '',
-      article: (
-        <img
-          className='container-img-full'
-          src='http://paulayling.me/wp-content/uploads/2019/02/hHandbookCover.png'
-          alt='Front cover'
-        />
-      )
+      article:
+        'http://paulayling.me/wp-content/uploads/2019/02/hHandbookCover.png'
     },
     {
       id: 1,
       sectionName: 'Contents',
       containerStyling: 'padding-3 ',
       article: (
-        <Fragment>
+        <section className='j'>
           <h1 className=''>Contents</h1>
           <ul>
             <li>
@@ -27,7 +22,7 @@ const SectionOneData = {
               </div>
             </li>
             <li>
-              <div className='container-flex-row bdr-bottom-gray'>
+              <div className='container-flex-row bdr-bottom-gray '>
                 <div>
                   <h4 className='contents-item'>It Started in an Ambulance</h4>
                 </div>
@@ -207,14 +202,14 @@ const SectionOneData = {
               </div>
             </li>
           </ul>
-        </Fragment>
+        </section>
       )
     },
     {
       id: 2,
       sectionName: 'Section 1',
       article: (
-        <Fragment>
+        <section>
           <div className='container-book-divider container-flex-column-spacebetween'>
             <h1>Section 1</h1>
             <img
@@ -223,7 +218,7 @@ const SectionOneData = {
               alt='Section 2 divider'
             />
           </div>
-        </Fragment>
+        </section>
       )
     },
     {
@@ -264,8 +259,7 @@ const SectionOneData = {
             </p>
           </article>
           <article
-            id='1 - About this Book'
-            className='padding-3-large-top  container-new-section'>
+            id='1 - About this Book' className="new-page">
             <h2>About This Book</h2>
             <h3>The Purpose of this book</h3>
             <p>
@@ -296,7 +290,7 @@ const SectionOneData = {
             </p>
             <p>A guide to health care or a medical document.</p>
           </article>
-          <article id='1 - How to use this book' className='padding-3'>
+          <article id='1 - How to use this book' className='new-page'>
             <h3>How to use this book</h3>
             <p>
               The book is split into sections. The sections contain worksheets
@@ -332,7 +326,8 @@ const SectionOneData = {
                 </ul>
               </li>
             </ul>
-
+          </article>
+          <article className='new-page'>
             <h4>Section 1</h4>
             <p>
               {' '}
@@ -340,7 +335,7 @@ const SectionOneData = {
               parts of this book
             </p>
             <p>
-              {' '}
+ 
               <strong>Advice for your Hospital Stay </strong>This is a small
               section designed to give you advice on what to expect and how to
               manage in Hospital
@@ -379,7 +374,7 @@ const SectionOneData = {
             </p>
           </article>
 
-          <article>
+          <article  className='new-page'>
             <h2>Advice for your Hospital Stay</h2>
             <p>
               During your stay you will have to keep your friends and family
@@ -408,7 +403,7 @@ const SectionOneData = {
             </p>
           </article>
 
-          <article id='content' className='padding-3'>
+          <article id='content'  className='new-page' >
             <h3>Managing Doctor Whirlwind</h3>
             <p>
               Doctors are very busy and it is common for doctors to see you

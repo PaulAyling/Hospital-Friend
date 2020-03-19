@@ -4,9 +4,9 @@ import Book from '../components/layout/book';
 const RenderMobi = props => {
   return (
     <Fragment>
+
       <Book
-        pageSize='page-size-mobi'
-        pageWidth='page-width-moby'
+        bookFormat='mobi'
         data={props.data}
       />
     </Fragment>
