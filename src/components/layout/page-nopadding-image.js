@@ -5,7 +5,7 @@ export default function(props) {
     <section id={props.description} className={'page-size-'+props.bookFormat}>
 
           <img
-    className={'page-size-'+props.bookFormat}
+    className={'page-size-'+props.bookFormat+'-img-full-hieght'}
     src={props.data[props.sectionNumber].article}
     alt={props.data[props.sectionNumber].sectionName}
   />

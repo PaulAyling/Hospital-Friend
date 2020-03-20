@@ -15,8 +15,8 @@ export default function(props) {
         description='Front Cover'
         data={props.data}
         sectionNumber={0}
-      /> */}
-      {/* <Page
+      /> 
+      <Page
         bookFormat={props.bookFormat}
         description='Contents Page'
         data={props.data}
@@ -27,12 +27,18 @@ export default function(props) {
         description='Section 1 Divider'
         data={props.data}
         sectionNumber={2}
-      /> */}
+      />
       <PageBlock
         bookFormat={props.bookFormat}
         description='Section 1'
         data={props.data}
         sectionNumber={3}
+      /> */}
+      <Page
+        bookFormat={props.bookFormat}
+        description='Section 2 Divider'
+        data={props.data}
+        sectionNumber={6}
       />
     </section>
   );
