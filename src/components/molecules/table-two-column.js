@@ -1,19 +1,24 @@
 import React, { Fragment } from 'react';
 
 export default function(props) {
-  // const intId = parseInt(id);
+  const sectionNumber = props.sectionNumber;
+  const tableData = props.data[sectionNumber].tableData;
 
-  return (
-    <Fragment>
 
-<section>
-  <div className='container-flex-row border-lightgray'>
-    <div className='gray container-flex-grow-1 table-side-header'>{props.rows[1].c1}</div>
-    <div className={'container-flex-grow-'+props.width2}></div> 
-  </div>
-</section>
-    </Fragment>
+  let tableRender = tableData.map((item, key) => {
+    return(
+          <li>{item.c1}</li>
+
+          
+
+     
+
+    )
+
+  });
+console.log(tableRender)
+  return <Fragment>
 
     
-  );
+  </Fragment>;
 }

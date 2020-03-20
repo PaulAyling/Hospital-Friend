@@ -104,21 +104,21 @@ const SectionTwoData =  [
   },
 
   {
-    id: 5,
-    sectionName: 'Section 2 ',
+    id: 6,
+    sectionName: 'Table: My Info',
     article: (
       <Fragment>
-        <section className='border-3'>
-          <TableTwoColumn width1='1' width2='3'
-          rows={[{c1:'Hospital Number',c2:'hjk'},{c1:'Hospital Number',c2:'hjk'}]}/>
-        </section>
+   <h1>This is a funky table2</h1>
       </Fragment>
     ),
+    tableStyleCol1:'1',
+    tableStyleCol2:'3',
     tableData:
       [
-        {c1:'Hospital Number',c2:'hjk'},
-        {c1:'Hospital Number',c2:'hjk'}
-      ]
+        {c1:'Hospital Number',c2:'exaMPLE - WRITE HERE'},
+        {c1:' Existing Medical conditions',c2:''}
+      ],
+      tableType:'TableTwoColum'
   },
   {
     id: 6,

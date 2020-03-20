@@ -18,8 +18,6 @@ export default class App extends Component {
     const sectionOne = SectionOneData;
     const sectionTwo = SectionTwoData;
     const Data = sectionOne.concat(sectionTwo);
-
-    console.log(JSON.stringify(Data[4]))
     return (
       <div id="App">
         <Router>
