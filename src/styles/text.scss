@@ -1,5 +1,15 @@
 @import './variables.scss';
 
+// p 
+// h1 {chapter/ section Header} {Contents Header} 
+// h2 {Page Header}  (include page break)
+// h3 {in page sub header} (optional Page break)
+// h4 {2nd level in page sub header}
+
+
+
+
+
 h1 {
   font-size: 5rem;
   text-align: center;
@@ -8,7 +18,7 @@ h1 {
 h2 {
   font-size: 4rem;
   text-align: center;
-  padding:0 0  1.5rem 0;
+  padding: 0 0 1.5rem 0;
 }
 
 h3 {
@@ -70,10 +80,14 @@ li {
     }
   }
 }
-.table{
-  &-side-header{
-    font-size:1.5rem;
-    padding:1rem;
-    height:5rem;
+.table {
+  &-side-header {
+    font-size: 1.5rem;
+    padding: 1rem;
+    height: 5rem;
   }
+}
+.contents-page-number {
+  font-size: 1.5rem;
+  font-weight: 200;
 }

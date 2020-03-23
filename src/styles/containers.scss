@@ -41,9 +41,9 @@
       flex-direction: row;
       justify-content: space-between;
     }
-    &-grow{
+    &-width{
       &-1{
-        flex-grow:1;
+        width:30%;
       }
       &-2{
         flex-grow:2;

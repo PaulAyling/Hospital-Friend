@@ -10,10 +10,10 @@ class TableTwoColumn extends React.Component {
     const elementsRender = currentData.tableData.map(elements => {
       return (
         <div className='container-flex-row border-lightgray'>
-          <div className={'table-side-header gray container-flex-grow-'+this.currentData.tableStyleCol1}>
+          <div className={'table-side-header gray container-flex-width-'+currentData.tableStyleCol1}>
           {elements.c1}
           </div>
-          <div className={'container-flex-grow-' + this.props.c2}></div>
+          <div></div>
         </div>
       );
     });

@@ -9,7 +9,29 @@ const SectionOneData =  [
     },
     {
       id: 1,
-      sectionName: 'Contents',
+      sectionName: 'Styling Template',
+      containerStyling: '',
+      article:
+       (
+         <Fragment>
+           <h1>Contains examples of all styling text & some components</h1>
+           <h1>Heading 1 (Chapter Headings)</h1>
+           <h2>Heading 2 (Page Headings)</h2>
+           <h3>Heading 3 (Page sub Headings)</h3>
+           <h4>Heading 4 (Chapter sub sub Headings)</h4>
+           <h5>Heading 5 (Chapter sub sub sub Headings)</h5>
+           <p>This is some paragraph text</p>
+           <ul>
+             <li>A list item</li>
+             <li>A list item</li>
+             <li>A list item</li>
+          <ul>
+         </Fragment>
+       )
+    },
+    {
+      id: 2,
+      sectionName: 'Section 1: Contents',
       containerStyling: 'padding-3 ',
       article: (
         <section className=''>
@@ -26,7 +48,7 @@ const SectionOneData =  [
                   <h4 className='contents-item'>It Started in an Ambulance</h4>
                 </div>
                 <div>
-                  <h4 className='text-align-right'>1</h4>
+                  <h4 className='contents-page-number'>1</h4>
                 </div>
               </div>
             </li>
@@ -205,8 +227,8 @@ const SectionOneData =  [
       )
     },
     {
-      id: 2,
-      sectionName: 'Section 1',
+      id: 3,
+      sectionName: 'Section 1: Divider',
       article: (
         <section>
           <div className='container-book-divider container-flex-column-spacebetween'>
@@ -221,44 +243,50 @@ const SectionOneData =  [
       )
     },
     {
-      id: 3,
-      sectionName: 'Section 1',
+      id: 4,
+      sectionName: 'Section 1: It Started with an Ambulance',
+      article: (
+       <Fragment>
+
+      
+      <h2>It started in an Ambulance... </h2>
+
+      <p>
+        Recently I found myself in an ambulance travelling across Thailand
+        with a suspected heart attack. This was just the beginning of a
+        journey which took me to three hospitals in three countries. At
+        the same time my uncle was about to be released from hospital with
+        a dangerous condition that only through his management of the
+        situation was prevented.
+      </p>
+
+      <p>
+        I was prepared to feel sick and scared about my illness, but was
+        not prepared for a host of other difficulties I would experience
+        while in hospital. After speaking with my uncle and others, I
+        could see that the problems I experienced were shared by many.{' '}
+      </p>
+
+      <p>
+        The last thing I wanted to do was think through problems and
+        create solutions while I was in hospital, but eventually I started
+        to figure things out and get organised. As I progressed in setting
+        up systems and managing things, management of my stay became much
+        easier.
+      </p>
+      <p>
+        Now I have done the work, at least I know that next time my stay
+        will much easier to manage. I hope others can benefit from my work
+        as well. This is the reason I wrote this book.
+      </p>
+       </Fragment>
+      )
+    },
+    {
+      id: 5,
+      sectionName: 'Section 1: About this book',
       article: (
         <Fragment>
-          <article>
-            <h2>It started in an Ambulance... </h2>
-
-            <p>
-              Recently I found myself in an ambulance travelling across Thailand
-              with a suspected heart attack. This was just the beginning of a
-              journey which took me to three hospitals in three countries. At
-              the same time my uncle was about to be released from hospital with
-              a dangerous condition that only through his management of the
-              situation was prevented.
-            </p>
-
-            <p>
-              I was prepared to feel sick and scared about my illness, but was
-              not prepared for a host of other difficulties I would experience
-              while in hospital. After speaking with my uncle and others, I
-              could see that the problems I experienced were shared by many.{' '}
-            </p>
-
-            <p>
-              The last thing I wanted to do was think through problems and
-              create solutions while I was in hospital, but eventually I started
-              to figure things out and get organised. As I progressed in setting
-              up systems and managing things, management of my stay became much
-              easier.
-            </p>
-            <p>
-              Now I have done the work, at least I know that next time my stay
-              will much easier to manage. I hope others can benefit from my work
-              as well. This is the reason I wrote this book.
-            </p>
-          </article>
-          <article
-            id='1 - About this Book' className="new-page">
             <h2>About This Book</h2>
             <h3>The Purpose of this book</h3>
             <p>
@@ -288,9 +316,8 @@ const SectionOneData =  [
               <h3>What is it not?</h3>A reference book or information source
             </p>
             <p>A guide to health care or a medical document.</p>
-          </article>
-          <article id='1 - How to use this book' className='new-page'>
-            <h3>How to use this book</h3>
+
+            <h2>How to use this book</h2>
             <p>
               The book is split into sections. The sections contain worksheets
               and guides you to walk you through what you have to do to make
@@ -325,8 +352,7 @@ const SectionOneData =  [
                 </ul>
               </li>
             </ul>
-          </article>
-          <article className='new-page'>
+
             <h4>Section 1</h4>
             <p>
               {' '}
@@ -371,10 +397,122 @@ const SectionOneData =  [
               <strong>Extra Resources </strong>Other materials that may be
               helpful
             </p>
-          </article>
 
-          <article  className='new-page'>
-            <h2>Advice for your Hospital Stay</h2>
+        </Fragment>
+          
+
+      )
+    }, 
+    {
+      id: 6,
+      sectionName: 'Section 1: Advice For Your Hospital Stay',
+      containerStyling: '',
+      article:
+       (
+         <Fragment>
+                  <h2>Advice for your Hospital Stay</h2>
+                  <p>Whilst in hopital there are a few things that can be easier if you know what expect in hospital and some good approaches.</p>
+         </Fragment>
+       )
+    },
+    {
+      id: 7,
+      sectionName: 'Section 1: Advice For your Hospital Stay > Things To bring',
+      containerStyling: '',
+      article:
+       (
+         <Fragment>
+ 
+      <h2>Item Checklist</h2>
+      <p>A few items that could help you stay</p>
+      <ul>
+        <li className='bullets'>
+          Electrical Items
+          <ul>
+            <li className='indented-2 '>
+              <i class='large material-icons'>check_box_outline_blank</i>{' '}
+              Phone
+            </li>
+            <li className='indented-2'>
+              <i class='large material-icons'>check_box_outline_blank</i>
+              Phone Charger
+            </li>
+            <li className='indented-2'>
+              <i class='large material-icons'>check_box_outline_blank</i>
+              Laptop or iPad
+            </li>
+          </ul>
+        </li>
+        <li className='bullets'>
+          Get better sleep
+          <ul>
+            <li className='indented-2'>
+              <i class='large material-icons'>check_box_outline_blank</i>
+              Face-mask
+            </li>
+            <li className='indented-2'>
+              <i class='large material-icons'>check_box_outline_blank</i>
+              Earplugs
+            </li>
+          </ul>
+        </li>
+        <li className='bullets'>
+          Bring some clothes
+          <ul>
+            <li className='indented-2'>
+              <i class='large material-icons'>check_box_outline_blank</i>
+              Loose fitting underwear
+            </li>
+            <li className='indented-2'>
+              <i class='large material-icons'>check_box_outline_blank</i>
+              T-shirts
+            </li>
+            <li className='indented-2'>
+              <i class='large material-icons'>check_box_outline_blank</i>
+              Track suit bottoms
+            </li>
+          </ul>
+        </li>
+        <li className='bullets'>
+          Some food
+          <ul>
+            <li className='indented-2'>
+              <i class='large material-icons'>check_box_outline_blank</i>
+              Cereal bars
+            </li>
+            <li className='indented-2'>
+              <i class='large material-icons'>check_box_outline_blank</i>
+              Chocolate
+            </li>
+          </ul>
+        </li>
+        <li className='bullets'>
+          Stationary
+          <ul>
+            <li className='indented-2'>
+              <i class='large material-icons'>check_box_outline_blank</i>
+              Pen
+            </li>
+            <li className='indented-2'>
+              <i class='large material-icons'>check_box_outline_blank</i>
+              Paper
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+         </Fragment>
+       )
+    },
+       {
+      id: 8,
+      sectionName: 'Advice For you Hospital Stay > Managing People',
+      containerStyling: '',
+      article:
+        (
+          <Fragment>
+
+            <h2>Managing people</h2>
             <p>
               During your stay you will have to keep your friends and family
               updated and also be talking to doctors.
@@ -400,43 +538,109 @@ const SectionOneData =  [
               A better way, if you can, is to have someone else handle the
               communication and send out daily updates on your behalf.{' '}
             </p>
-          </article>
 
-          <article id='content'  className='new-page' >
-            <h3>Managing Doctor Whirlwind</h3>
-            <p>
-              Doctors are very busy and it is common for doctors to see you
-              briefly and after that they may be unavailable for the rest of the
-              day. It is easy to finish chatting with a doctor wishing you'd
-              asked something else or forget what was said. This is where a
-              system can help you.
-            </p>
+           
+          </Fragment>)
+          },
+       {
+      id: 9,
+      sectionName: 'Section 1: Advice For you Hospital Stay > Leaving Hospital',
+      containerStyling: '',
+      article:
+        (
+          <Fragment>
 
-            <p>
-              <strong>The best system </strong>
-              Use the "Doctors meetings notes" section of the diary in this book
-              to prepare for the meeting beforehand and then use it to ensure
-              you don't forget the answers.
-            </p>
-            <p>
-              <strong>Getting help from friends or family: </strong>
-              For important meetings having someone attend in person or by phone
-              can be very helpful to ensure the right questions are asked and
-              correct notes are taken. This could be someone you know or a
-              professional. If you have someone in mind it is a good idea to ask
-              them now before you need them.
-            </p>
+          <h2>Managing your release from hospital</h2>
+          <p>
+            The doctor has made the decision to have you leave hospital. In this
+            section I explain what the release process often looks like and what
+            are some of the best things to do and watch for when you are being
+            released.
+          </p>
+          <h2>The release process</h2>
+          <p>It normally goes something like this</p>
+          <ul>
+            <li>
+              You have a meeting with a senior doctor or specialist (release
+              meeting) to cover off questions and explain the reason for
+              release.
+            </li>
+            <li>Paperwork is then filled in</li>
+            <li>You pick up paper work</li>
+            <li>You make your way home</li>
+          </ul>
 
-            <p>
-              <strong>Getting help from a patients advocate:</strong>
-              Patients advocates are professionals that can help you to
-              understand the doctor and ask questions on your behalf. Depending
-              on where you are they may be offered for free or be hired
-              privately.
-            </p>
-          </article>
-        </Fragment>
-      )
+
+    
+          <h2>About after your stay in Hospital</h2>
+
+          <p>
+            Depending on your current symptoms and network how you are going to
+            manage after hospital can be daunting. If you are concerned this
+            should also be discussed in the release meeting.
+          </p>
+
+          <p>
+            Usually on the day of your release you will have a meeting with a
+            doctor. To help you with this is enclosed is a checklist, it may
+            also be useful to have another person present in this meeting. Use a
+            diary page to write down important questions before the meeting. You
+            may or may not be told that this is going to happen so you will need
+            to be prepared for it.
+          </p>
+
+
+
+          <h2>Release Meeting Checklist</h2>
+          <ul>
+            <li>
+              If you have chosen to have another person attend ensure you both
+              know when its is schedules to occur
+            </li>
+            <li>
+              After reading these pages write down all your questions so you are
+              prepared for the meeting
+            </li>
+          </ul>
+  
+ 
+          <h2>The Release Meeting Questions</h2>
+          <p><b>Some example questions below</b></p>
+          <p>
+            
+              If you can it is best to ensure your questions are written down
+              and then you attempt to write down the answers as you talk to the
+              doctor to ensure you don't forget.
+            
+          </p>
+          <ul>
+            <li>The causes of symptoms are fully explained</li>
+            <li>
+              Will I make a full recovery and what will the timeline look like?
+            </li>
+            <li>What symptoms should I see improving first?</li>
+            <li>
+              Are there any particular symptoms should I look for and what
+              should I do if I see them?
+            </li>
+            <li>What level of rest is required?</li>
+            <li>Is there anything else I can do to improve recovery?</li>
+          </ul>
+          <ul>
+            <li>
+              Is there anything further you need to organize with your doctor -
+              such as follow up?
+            </li>
+            <li>What (if any) drugs you need to take and when</li>
+            <li>What (if any) any special precuations you need to take</li>
+
+  
+          </ul>
+
+        
+          </Fragment>
+
+        )
     }
 
   ];

@@ -1,0 +1,16 @@
+THIS IS TAKEN AND REDUCED FROM THE amazonKindlePublishingGuide.pdf published by Amazon
+
+SUMMARISED KEY POINTS
+Cover includes
+1x Marketing Cover Image (2560 pixels x 1600 )
+1 x First page of book needs to be the cover which is 100% image only
+use manifest tags
+<metadata> ... 
+<meta name="cover" content="my-cover-image" />  ... 
+</metadata> ... 
+<manifest> ... 
+<item href="MyCoverImage.jpg" id="my-cover-image" media-type="image/jpeg" /> ... 
+</manifest> 
+
+TOC
+

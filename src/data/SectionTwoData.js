@@ -3,7 +3,7 @@ import TableTwoColumn from '../components/molecules/table-two-column'
 const SectionTwoData =  [
   {
     id: 4,
-    sectionName: 'Section 2',
+    description: 'Section 2',
     article: (
       <section>
         <div className='container-book-divider container-flex-column-spacebetween'>
@@ -19,7 +19,7 @@ const SectionTwoData =  [
   },
   {
     id: 5,
-    sectionName: 'Section 2',
+    description: 'Section 2',
     article: (
       <section>
       <h3>Item Checklist</h3>
@@ -105,10 +105,10 @@ const SectionTwoData =  [
 
   {
     id: 6,
-    sectionName: 'Table: My Info',
+    description: 'Table: My Info',
     article: (
       <Fragment>
-   <h1>This is a funky table2</h1>
+   <h1>Your Information</h1>
       </Fragment>
     ),
     tableStyleCol1:'1',
@@ -116,13 +116,22 @@ const SectionTwoData =  [
     tableData:
       [
         {c1:'Hospital Number',c2:'exaMPLE - WRITE HERE'},
-        {c1:' Existing Medical conditions',c2:''}
+        {c1:'Existing Medical conditions',c2:''},
+        {c1:'Insurance details',c2:''},
+        {c1:'Hospital Ward Contact Details',c2:''},
+        {c1:'Wifi password and username for ward',c2:''},
+        {c1:' ',c2:''},
+        {c1:' ',c2:''},
+        {c1:' ',c2:''},
+        {c1:' ',c2:''},
+        
+ 
       ],
       tableType:'TableTwoColum'
   },
   {
     id: 6,
-    sectionName: 'Section 2 ',
+    description: 'Section 2 ',
     article: (
       <Fragment>
         <section>

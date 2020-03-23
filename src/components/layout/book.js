@@ -5,48 +5,68 @@ import PageNoPadding from './page-nopadding';
 import PageNoPaddingImage from './page-nopadding-image'
 import PageTableTwoColumn from'./page-table-two-column';
 
+
 export default function(props) {
   return (
     <section
       id='Book Container'
       className={'container-flex-columm page-width-' + props.bookFormat}>
 
-       <PageNoPaddingImage
+
+     
+   {/* FRONT COVER */}
+     <PageNoPaddingImage
         bookFormat={props.bookFormat}
         description='Front Cover'
         data={props.data}
         sectionNumber={0}
       /> 
+      {/* section 1: Contents */}
       <Page
         bookFormat={props.bookFormat}
-        description='Contents Page'
         data={props.data}
         sectionNumber={1}
       />
+        {/* section 1: Divider */}
       <Page
         bookFormat={props.bookFormat}
-        description='Section 1 Divider'
         data={props.data}
         sectionNumber={2}
       />
+       {/* section 1: It started in an Ambulance */}
       <PageBlock
         bookFormat={props.bookFormat}
         description='Section 1'
         data={props.data}
         sectionNumber={3}
       />
+       <PageBlock
+        bookFormat={props.bookFormat}
+        description='Section 1: About this Book'
+        data={props.data}
+        sectionNumber={4}
+      /> 
       <Page
         bookFormat={props.bookFormat}
-        description='Section 2 Divider'
+        description='Section 1 Item Checklist'
+        data={props.data}
+        sectionNumber={5}
+      /> 
+             <PageBlock
+        bookFormat={props.bookFormat}
+        description='Section 1: About this Book'
         data={props.data}
         sectionNumber={6}
       /> 
-      <PageTableTwoColumn
+             <PageBlock
         bookFormat={props.bookFormat}
-        description='Section 2 Divider'
+        description='Section 1: About this Book'
         data={props.data}
-        sectionNumber={6}
-      />
+        sectionNumber={8}
+      /> 
+
+
+
     </section>
   );
 }

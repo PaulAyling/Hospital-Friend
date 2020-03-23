@@ -5,8 +5,11 @@ import React, {Fragment}  from 'react';
 const RenderPdf = () => {
   return (
     <Fragment>
-<h1>THis is the PDF Render</h1>
 
+      <Book
+        bookFormat='pdf'
+        data={props.data}
+      />
     </Fragment>
   );
 };
