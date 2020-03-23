@@ -2,12 +2,13 @@ import React, { Fragment } from 'react';
 
 export default function(props) {
   return (
-    <section id={props.description} className={'page-size-'+props.bookFormat}>
+<section id={props.data[0].sectionName} className={'page-size-'+props.bookFormat}>
+
 
           <img
     className={'page-size-'+props.bookFormat+'-img-full-hieght'}
-    src={props.data[props.sectionNumber].article}
-    alt={props.data[props.sectionNumber].sectionName}
+    src={props.data[0].article} 
+    alt={props.data[0].sectionName} 
   />
     </section>
   );

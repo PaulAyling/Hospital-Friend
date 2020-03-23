@@ -1,8 +1,9 @@
 import React, {Fragment}  from 'react';
+import Book from '../components/layout/book'
 
 
 
-const RenderPdf = () => {
+const RenderPdf = (props) => {
   return (
     <Fragment>
 

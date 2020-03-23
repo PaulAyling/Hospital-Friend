@@ -22,7 +22,7 @@ export default class App extends Component {
       <div id="App">
         <Router>
           <Route exact path='/mobi' component={RenderMobi} MyTestData='hello' />
-          <Route exact path='/pdf' component={RenderPdf} />
+          {/* <Route exact path='/pdf' component={RenderPdf} /> */}
         </Router>
         <RenderMobi Render='mobi' data={Data} />
    

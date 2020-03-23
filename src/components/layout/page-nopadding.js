@@ -2,8 +2,9 @@ import React, { Fragment } from 'react';
 
 export default function(props) {
   return (
-    <section id={props.description} className={'page-size-'+props.bookFormat}>
-      {props.data[props.sectionNumber].sectionName}
+<section id={props.data[0].sectionName} className={'page-size-'+props.bookFormat}>
+    <header>{props.data[0].sectionName}</header>
+      {props.data[0].article}
     </section>
   );
 }

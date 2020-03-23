@@ -4,10 +4,9 @@ export default function(props) {
   // const intId = parseInt(id);
 
   return (
-    <section
-      id={props.data[props.sectionNumber].sectionName}
-      className='padding-3-large-top'>
-      {props.data[props.sectionNumber].article}
+<section id={props.data[0].sectionName}  className='padding-3-large-top'>
+    <header>{props.data[0].sectionName}</header>
+    {props.data[0].article} 
     </section>
   );
 }
