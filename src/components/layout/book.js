@@ -2,6 +2,9 @@ import React, { Fragment } from 'react';
 import PageBlock from './page-block';
 import Page from './page';
 import PageNoPaddingImage from './page-nopadding-image';
+import DataSmy from '../layout/dataSmy';
+import PageTableTwoColumn from './page-table-two-column';
+import TwoPageLayout from './two-page-layout';
 
 export default function(props) {
   const Data = props.data;
@@ -64,20 +67,70 @@ export default function(props) {
       getFile.articleNumber === 4
     );
   });
+
+  const section2Divider = Data.filter(function(getFile) {
+    return (
+      getFile.sectionNumber === 2 &&
+      getFile.ChapterNumber === 1 &&
+      getFile.articleNumber === 1
+    );
+  });
+  const yourDetails = Data.filter(function(getFile) {
+    return (
+      getFile.sectionNumber === 2 &&
+      getFile.ChapterNumber === 1 &&
+      getFile.articleNumber === 2
+    );
+  });
+  const timeline = Data.filter(function(getFile) {
+    return (
+      getFile.sectionNumber === 2 &&
+      getFile.ChapterNumber === 2 &&
+      getFile.articleNumber === 1
+    );
+  });
+  const diary = Data.filter(function(getFile) {
+    return (
+      getFile.sectionNumber === 2 &&
+      getFile.ChapterNumber === 2 &&
+      getFile.articleNumber === 2
+    );
+  });
+  const diaryPageTwo = Data.filter(function(getFile) {
+    return (
+      getFile.sectionNumber === 2 &&
+      getFile.ChapterNumber === 2 &&
+      getFile.articleNumber === 3
+    );
+  });
+  const diagnosisOne = Data.filter(function(getFile) {
+    return (
+      getFile.sectionNumber === 2 &&
+      getFile.ChapterNumber === 4 &&
+      getFile.articleNumber === 1
+    );
+  });
+
   return (
     <section
       id='Book Container'
       className={'container-flex-columm page-width-' + props.bookFormat}>
-      <Page bookFormat={props.bookFormat} data={stylesExamples} />
+      {/* <Page bookFormat={props.bookFormat} data={stylesExamples} />
       <PageNoPaddingImage bookFormat={props.bookFormat} data={frontCover} />
-      <Page bookFormat={props.bookFormat} data={contents} />
-      <PageBlock bookFormat={props.bookFormat} data={StartedWithAmbo} />
+      <Page bookFormat={props.bookFormat} data={contents} /> */}
+      {/* <PageBlock bookFormat={props.bookFormat} data={StartedWithAmbo} />
       <PageBlock bookFormat={props.bookFormat} data={aboutTheBook} />
       <PageBlock bookFormat={props.bookFormat} data={AdviceForYourStay} />
       <PageBlock bookFormat={props.bookFormat} data={AdviceForYourStayThingsToBring}/>
       <PageBlock bookFormat={props.bookFormat} data={AdviceForYourStayManagingPeople}/>
-      <PageBlock bookFormat={props.bookFormat} data={AdviceForYourStayLeavingHospital}/>
+      <PageBlock bookFormat={props.bookFormat} data={AdviceForYourStayLeavingHospital}/> */}
       {/* SECTION 2 */}
+      {/* <DataSmy bookFormat={props.bookFormat} data={Data} /> */}
+      {/* <PageTableTwoColumn bookFormat={props.bookFormat} data={yourDetails} />
+      <PageTableTwoColumn bookFormat={props.bookFormat} data={timeline} /> */}
+      {/* <PageTableTwoColumn  bookFormat={props.bookFormat} data={diary} />
+      <PageTableTwoColumn  bookFormat={props.bookFormat} data={diaryPageTwo} /> */}
+      <Page Page={props.bookFormat} data={diagnosisOne} />
     </section>
   );
 }

@@ -1,23 +1,36 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 
 class TableTwoColumn extends React.Component {
   constructor(props) {
     super(props);
   }
   render() {
-    const sectionNumber = this.props.sectionNumber;
-    const currentData = this.props.data[sectionNumber]
-    const elementsRender = currentData.tableData.map(elements => {
+    const currentData = this.props.data[0];
+    console.log(JSON.stringify(currentData));
+
+    const elementRender = currentData.tableData.map(elements => {
       return (
         <div className='container-flex-row border-lightgray'>
-          <div className={'table-side-header gray container-flex-width-'+currentData.tableStyleCol1}>
-          {elements.c1}
+          <div
+            className={
+              'table-side-header ' +
+              currentData.style +
+              ' container-flex-width-' +
+              currentData.tableStyleCol1
+            }>
+            {elements.c1}
           </div>
-          <div></div>
+          <div>{elements.c2}</div>
         </div>
       );
     });
-    return <h1>{elementsRender}</h1>;
+    return (
+<Fragment>
+      {elementRender}
+</Fragment>
+    
+
+    );
   }
 }
 
