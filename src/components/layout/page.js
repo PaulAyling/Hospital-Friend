@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import DiagnosticTable from '../molecules/diagnosis-table';
+
 
 export default function(props) {
   return (

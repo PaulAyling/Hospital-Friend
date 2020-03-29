@@ -1,6 +1,6 @@
-import React, { Fragment } from 'react';
+import React  from 'react';
 import TableTwoColum from '../molecules/table-two-column';
-import Test from '../molecules/test-component';
+
 
 export default function(props) {
   return (

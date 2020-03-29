@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import TableTwoColumn from '../molecules/table-two-column'
 
 export default function(props) {
