@@ -13,10 +13,12 @@ html {
 @import './variables.scss';
 @import './containers.scss';
 @import './forms.scss';
-@import './bordersAndPadding.scss';
+@import './bordersPaddingDimensions.scss';
 @import './text.scss';
 @import './color.scss';
 
 @import './customOverrides.scss';
 
 @import './devSandbox.scss';
+
+@import './delete.scss';

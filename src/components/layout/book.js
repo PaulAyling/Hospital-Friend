@@ -130,7 +130,7 @@ export default function(props) {
       <PageTableTwoColumn bookFormat={props.bookFormat} data={timeline} /> */}
       {/* <PageTableTwoColumn  bookFormat={props.bookFormat} data={diary} />
       <PageTableTwoColumn  bookFormat={props.bookFormat} data={diaryPageTwo} /> */}
-      <Page Page={props.bookFormat} data={diagnosisOne} />
+      <Page bookFormat={props.bookFormat} data={diagnosisOne} />
     </section>
   );
 }

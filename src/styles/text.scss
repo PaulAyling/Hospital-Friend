@@ -80,6 +80,27 @@ li {
     }
   }
 }
+
+.text{
+  &-left{
+    text-align:left;
+  }
+  &-right{
+    text-align:right;
+  }
+  &-center{
+    text-align:center;
+  }
+  &-bottom{
+    vertical-align: bottom;
+  }
+  &-size{
+    &-x{
+      font-size:1rem;
+    }
+  }
+}
+
 .table {
   &-side-header {
     font-size: 1.5rem;
@@ -90,4 +111,12 @@ li {
 .contents-page-number {
   font-size: 1.5rem;
   font-weight: 200;
+}
+
+
+.text-white{
+color:white;
+background:white;
+padding:10px;
+box-sizing: border-box;
 }

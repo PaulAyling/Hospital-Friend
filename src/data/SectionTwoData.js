@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import TableTwoColumn from '../components/molecules/table-two-column';
+import DiagnosisTable from '../components/molecules/diagnosis-table';
 const SectionTwoData = [
   {
     id: 3,
@@ -26,7 +27,7 @@ const SectionTwoData = [
     ChapterNumber: 1,
     articleNumber: 2,
     sectionName: 'Section 2: Your Info',
-    style:'gray',
+    style: 'gray',
     article: (
       <Fragment>
         <h1>Your Information</h1>
@@ -54,7 +55,7 @@ const SectionTwoData = [
     ChapterNumber: 2,
     articleNumber: 1,
     sectionName: 'Section 2: Timeline Summary',
-    style:'gray',
+    style: 'gray',
     article: (
       <Fragment>
         <h1>Event Timeline</h1>
@@ -92,16 +93,15 @@ const SectionTwoData = [
     ChapterNumber: 2,
     articleNumber: 2,
     sectionName: 'Section 2: Daily Diary',
-    style:'',
+    style: '',
     article: (
       <Fragment>
-              <div className='container-flex-row border-lightgray'>
+        <div className='container-flex-row border-lightgray'>
           <div className='table-side-header lightgray container-flex-width-1 text-align-center'>
             Todays Date
           </div>
           <div className='table-side-header  container-flex-width-3 text-align-center'>
             {' '}
-            
           </div>
         </div>
       </Fragment>
@@ -118,21 +118,15 @@ const SectionTwoData = [
       { c1: ' ', c2: '' },
       { c1: ' ', c2: '' }
     ],
-    tableType: 'Diary',
- 
-
+    tableType: 'Diary'
   },
   {
     sectionNumber: 2,
     ChapterNumber: 2,
     articleNumber: 3,
     sectionName: 'Section 2: Daily Diary - Extra',
-    style:'',
-    article: (
-      <Fragment>
-             
-      </Fragment>
-    ),
+    style: '',
+    article: <Fragment></Fragment>,
     tableStyleCol1: '1',
     tableStyleCol2: '3',
     tableData: [
@@ -147,7 +141,7 @@ const SectionTwoData = [
       { c1: ' ', c2: '' },
       { c1: ' ', c2: '' }
     ],
-    tableType: 'Diary',
+    tableType: 'Diary'
   },
 
   {
@@ -189,11 +183,25 @@ const SectionTwoData = [
     sectionName: 'Section 2:Diagnosis Log',
     article: (
       <Fragment>
-        <section id='content' className='container-whole-page-left'>
-         <h1>Hello</h1>
-        </section>
+        <DiagnosisTable/>
+        <DiagnosisTable/>
       </Fragment>
-    )
+    ),
+    tableStyleCol1: '1',
+    tableStyleCol2: '3',
+    tableData: [
+      { c1: 'Additional Notes:', c2: '' },
+      { c1: ' ', c2: '' },
+      { c1: ' ', c2: '' },
+      { c1: ' ', c2: '' },
+      { c1: '', c2: '' },
+      { c1: ' ', c2: '' },
+      { c1: ' ', c2: '' },
+      { c1: ' ', c2: '' },
+      { c1: ' ', c2: '' },
+      { c1: ' ', c2: '' }
+    ],
+    tableType: 'Diary'
   },
   {
     id: '1',
@@ -228,38 +236,49 @@ const SectionTwoData = [
     sectionName: 'Section 2: Daily Diary',
     pageHeader: 'Daily Diary Notes',
     htmlContent: (
-      <section id='content' class='contents-table'>
-        {' '}
-        <p className='pageHeading'>Diary Log</p>
-        <p className=''>A space for your thoughts for the day</p>
-        <section class='table-flex-col'>
-          <div className='table-flex-row'>
-            <div class=' table-column-1'>
-              <div class='table-header-row table-header-row-left dark-gray border-bottom-gray'>
-                <h2>DATE</h2>
+      <Fragment>
+        <main className='container-flex-col'>
+          <aside className='diagnosisBox-side-image '></aside>
+          <article
+            id='notes'
+            className='contaier-flex-row test-box-medium-red '>
+            <h1>My Stuff</h1>
+          </article>
+        </main>
+
+        <section id='content' class='contents-table'>
+          {' '}
+          <p className='pageHeading'>Diary Log2</p>
+          <p className=''>A space for your thoughts for the day</p>
+          <section class='table-flex-col'>
+            <div className='table-flex-row'>
+              <div class=' table-column-1'>
+                <div class='table-header-row table-header-row-left dark-gray border-bottom-gray'>
+                  <h2>DATE</h2>
+                </div>
+              </div>
+              <div class='table-column-2'>
+                <div class='table-header-row table-header-row-right border-gray'></div>
               </div>
             </div>
-            <div class='table-column-2'>
-              <div class='table-header-row table-header-row-right border-gray'></div>
-            </div>
-          </div>
 
-          <div class='table-row'>
-            <p className='table-text'>Questions:</p>
-          </div>
-          <div class='table-row'></div>
-          <div class='table-row'></div>
-          <div class='table-row'></div>
-          <div class='table-row-section'></div>
-          <div class='table-row'>
-            <p className='table-text'>Thoughts of the day: </p>
-          </div>
-          <div class='table-row'></div>
-          <div class='table-row'></div>
-          <div class='table-row'></div>
-          <div class='table-row-section'></div>
+            <div class='table-row'>
+              <p className='table-text'>wwQuestions:</p>
+            </div>
+            <div class='table-row'></div>
+            <div class='table-row'></div>
+            <div class='table-row'></div>
+            <div class='table-row-section'></div>
+            <div class='table-row'>
+              <p className='table-text'>Thoughts of the day: </p>
+            </div>
+            <div class='table-row'></div>
+            <div class='table-row'></div>
+            <div class='table-row'></div>
+            <div class='table-row-section'></div>
+          </section>
         </section>
-      </section>
+      </Fragment>
     )
   },
   {
@@ -273,7 +292,7 @@ const SectionTwoData = [
           <div className='table-flex-row'>
             <div class='table-column-2'>
               <div class='table-header-single'>
-                <p className='table-text'>About the Day:</p>
+                <p className='table-text'>About the Day2222:</p>
               </div>
             </div>
           </div>
