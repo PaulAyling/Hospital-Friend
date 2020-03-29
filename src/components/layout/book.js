@@ -6,8 +6,11 @@ import DataSmy from '../layout/dataSmy';
 import PageTableTwoColumn from './page-table-two-column';
 import TwoPageLayout from './two-page-layout';
 
+
 export default function(props) {
   const Data = props.data;
+  console.log(Data)
+
 
   const stylesExamples = Data.filter(function(getFile) {
     return getFile.sectionNumber === 0 && getFile.ChapterNumber === 1;
@@ -110,6 +113,8 @@ export default function(props) {
       getFile.articleNumber === 1
     );
   });
+
+  console.log(diagnosisOne)
 
   return (
     <section

@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react';
-import TableTwoColumn from '../components/molecules/table-two-column';
 import DiagnosisTable from '../components/molecules/diagnosis-table';
 const SectionTwoData = [
   {

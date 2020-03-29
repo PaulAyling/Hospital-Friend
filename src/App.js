@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import SectionOneData from './data/SectionOneData';
 import SectionTwoData from './data/SectionTwoData';
+import Reducer from './data/reducer'
 
 import RenderMobi from './pages/renderMobi';
 import RenderPdf from './pages/renderPdf';
@@ -15,9 +16,7 @@ export default class App extends Component {
   // state = SectionOneData.content;
 
   render() {
-    const sectionOne = SectionOneData;
-    const sectionTwo = SectionTwoData;
-    const Data = sectionOne.concat(sectionTwo);
+    const Data = Reducer
     return (
       <div id="App">
         <Router>
