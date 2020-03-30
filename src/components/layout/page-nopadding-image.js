@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 
 export default function(props) {
   return (
-<section id={props.data[0].sectionName} className={'page-size-'+props.bookFormat}>
+<section id={props.data[0].sectionName} className={'new-page page-size-'+props.bookFormat}>
 
 
           <img

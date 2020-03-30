@@ -4,14 +4,14 @@ export default function(props) {
   const elementsRender = props.data.map(elements => {
     return (
    
-    <div className='container-flex-row'>
+    <div className=' container-flex-row'>
         <div >
         {elements.sectionName}
         </div>
     </div>
     )
   });
-  return <section>
+  return <section className='new-page'>
   {elementsRender}
   
   

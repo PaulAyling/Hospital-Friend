@@ -9,7 +9,7 @@ import TwoPageLayout from './two-page-layout';
 
 export default function(props) {
   const Data = props.data;
-  console.log(Data)
+
 
 
   const stylesExamples = Data.filter(function(getFile) {
@@ -37,11 +37,11 @@ export default function(props) {
   });
   const aboutTheBook = Data.filter(function(getFile) {
     return (
-      getFile.sectionNumber === 1 &&
-      getFile.ChapterNumber === 3 &&
-      getFile.articleNumber === 1
+      getFile.fileName === 'aboutThisBook'
     );
   });
+  console.log(aboutTheBook)
+
   const AdviceForYourStay = Data.filter(function(getFile) {
     return (
       getFile.sectionNumber === 1 &&
@@ -120,22 +120,25 @@ export default function(props) {
     <section
       id='Book Container'
       className={'container-flex-columm page-width-' + props.bookFormat}>
-      {/* <Page bookFormat={props.bookFormat} data={stylesExamples} />
+
+       <Page bookFormat={props.bookFormat} data={stylesExamples} />
       <PageNoPaddingImage bookFormat={props.bookFormat} data={frontCover} />
-      <Page bookFormat={props.bookFormat} data={contents} /> */}
-      {/* <PageBlock bookFormat={props.bookFormat} data={StartedWithAmbo} />
+
+      <DataSmy bookFormat={props.bookFormat} data={Data} />
+      <Page bookFormat={props.bookFormat} data={contents} />
+
+      <PageBlock bookFormat={props.bookFormat} data={StartedWithAmbo} />
       <PageBlock bookFormat={props.bookFormat} data={aboutTheBook} />
-      <PageBlock bookFormat={props.bookFormat} data={AdviceForYourStay} />
       <PageBlock bookFormat={props.bookFormat} data={AdviceForYourStayThingsToBring}/>
       <PageBlock bookFormat={props.bookFormat} data={AdviceForYourStayManagingPeople}/>
-      <PageBlock bookFormat={props.bookFormat} data={AdviceForYourStayLeavingHospital}/> */}
-      {/* SECTION 2 */}
-      {/* <DataSmy bookFormat={props.bookFormat} data={Data} /> */}
-      {/* <PageTableTwoColumn bookFormat={props.bookFormat} data={yourDetails} />
-      <PageTableTwoColumn bookFormat={props.bookFormat} data={timeline} /> */}
-      {/* <PageTableTwoColumn  bookFormat={props.bookFormat} data={diary} />
-      <PageTableTwoColumn  bookFormat={props.bookFormat} data={diaryPageTwo} /> */}
-      <Page bookFormat={props.bookFormat} data={diagnosisOne} />
+      <PageBlock bookFormat={props.bookFormat} data={AdviceForYourStayLeavingHospital}/>
+
+
+      <PageTableTwoColumn bookFormat={props.bookFormat} data={yourDetails} />
+      <PageTableTwoColumn bookFormat={props.bookFormat} data={timeline} />
+      <PageTableTwoColumn  bookFormat={props.bookFormat} data={diary} />
+      <PageTableTwoColumn  bookFormat={props.bookFormat} data={diaryPageTwo} />
+      <Page bookFormat={props.bookFormat} data={diagnosisOne} /> 
     </section>
   );
 }

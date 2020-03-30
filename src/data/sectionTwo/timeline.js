@@ -11,7 +11,7 @@ const Timeline = [
     style: 'gray',
     article: (
       <Fragment>
-        <h1>Event Timeline</h1>
+        <h1>Timeline</h1>
         <p>
           This is for you to build a summary of the main events if you have had
           multiple incidents during your ailment.
@@ -36,8 +36,8 @@ const Timeline = [
       { c1: ' ', c2: '' },
       { c1: ' ', c2: '' },
       { c1: ' ', c2: '' },
-      { c1: ' ', c2: '' },
-      { c1: ' ', c2: '' }
+ 
+
     ],
     tableType: 'TableTwoColum'
   }

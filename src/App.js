@@ -4,8 +4,7 @@ import './App.css';
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-import SectionOneData from './data/SectionOneData';
-import SectionTwoData from './data/SectionTwoData';
+
 import Reducer from './data/reducer'
 
 import RenderMobi from './pages/renderMobi';

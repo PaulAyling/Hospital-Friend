@@ -9,7 +9,7 @@ const Furniture = [
     containerStyling: '',
     article: (
       <Fragment>
-        <h1>Contains examples of all styling text & some components</h1>
+        <h1>STYLES</h1>
         <h1>Heading 1 (Chapter Headings)</h1>
         <h2>Heading 2 (Page Headings)</h2>
         <h3>Heading 3 (Page sub Headings)</h3>

@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 const Contents = [
   {
     id: 1,
+    fileName:'contents',
     sectionNumber: 0,
     ChapterNumber: 6,
     articleNumber: 1,
@@ -137,7 +138,7 @@ const Contents = [
           <li>
             <div className='container-flex-row'>
               <div>
-                <h5 className='contents-item'>Timeline Summary</h5>
+                <h5 className='contents-item'>Timeline</h5>
               </div>
               <div>
                 <h5 className='contents-page-number'>1</h5>
@@ -167,7 +168,7 @@ const Contents = [
           <li>
             <div className='container-flex-row'>
               <div>
-                <h5 className='contents-item'>Drug Log</h5>
+                <h5 className='contents-item'>Drug</h5>
               </div>
               <div>
                 <h5 className='contents-page-number'>1</h5>
@@ -177,7 +178,7 @@ const Contents = [
           <li>
             <div className='container-flex-row'>
               <div>
-                <h5 className='contents-item'>Event Log</h5>
+                <h5 className='contents-item'>Events</h5>
               </div>
               <div>
                 <h5 className='contents-page-number'>1</h5>

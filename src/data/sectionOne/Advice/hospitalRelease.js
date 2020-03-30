@@ -20,16 +20,16 @@ const HospitalRelease = [
         <h2>The release process</h2>
         <p>It normally goes something like this</p>
         <ul>
-          <li>
+          <li className='bullets'>
             You have a meeting with a senior doctor or specialist (release
             meeting) to cover off questions and explain the reason for release.
           </li>
-          <li>Paperwork is then filled in</li>
-          <li>You pick up paper work</li>
-          <li>You make your way home</li>
+          <li className='bullets'>Paperwork is then filled in</li>
+          <li className='bullets'>You pick up paper work</li>
+          <li className='bullets'>You make your way home</li>
         </ul>
 
-        <h2>About after your stay in Hospital</h2>
+        <h2 className='new-page'>About after your stay in Hospital</h2>
 
         <p>
           Depending on your current symptoms and network how you are going to
@@ -48,11 +48,11 @@ const HospitalRelease = [
 
         <h2>Release Meeting Checklist</h2>
         <ul>
-          <li>
+          <li className='bullets'>
             If you have chosen to have another person attend ensure you both
             know when its is schedules to occur
           </li>
-          <li>
+          <li className='bullets'>
             After reading these pages write down all your questions so you are
             prepared for the meeting
           </li>
@@ -68,25 +68,25 @@ const HospitalRelease = [
           to ensure you don't forget.
         </p>
         <ul>
-          <li>The causes of symptoms are fully explained</li>
-          <li>
+          <li className='bullets'>The causes of symptoms are fully explained</li>
+          <li className='bullets'>
             Will I make a full recovery and what will the timeline look like?
           </li>
-          <li>What symptoms should I see improving first?</li>
-          <li>
+          <li className='bullets'>What symptoms should I see improving first?</li>
+          <li className='bullets'>
             Are there any particular symptoms should I look for and what should
             I do if I see them?
           </li>
-          <li>What level of rest is required?</li>
-          <li>Is there anything else I can do to improve recovery?</li>
+          <li className='bullets'>What level of rest is required?</li>
+          <li className='bullets'>Is there anything else I can do to improve recovery?</li>
         </ul>
         <ul>
-          <li>
+          <li className='bullets'>
             Is there anything further you need to organize with your doctor -
             such as follow up?
           </li>
-          <li>What (if any) drugs you need to take and when</li>
-          <li>What (if any) any special precuations you need to take</li>
+          <li className='bullets'>What (if any) drugs you need to take and when</li>
+          <li className='bullets'>What (if any) any special precuations you need to take</li>
         </ul>
       </Fragment>
     )

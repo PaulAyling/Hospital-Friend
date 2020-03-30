@@ -3,6 +3,7 @@ const AboutBook = [
 
   {
     id: 5,
+    fileName:'aboutThisBook',
     sectionNumber: 1,
     ChapterNumber: 3,
     articleNumber: 1,
@@ -22,10 +23,11 @@ const AboutBook = [
           and healthcare professionals.{' '}
         </p>
 
-        <p>
-          {' '}
+     
           <h3>What it is?</h3>
-          <strong>Simple: </strong> It should take 10 mins or less of simple
+             <p>
+          {' '}<strong className='text-center'>Simple: </strong> 
+         It should take 10 mins or less of simple
           reading before you can get started.
         </p>
         <p>
@@ -34,11 +36,12 @@ const AboutBook = [
         </p>
 
         <p>
-          <h3>What is it not?</h3>A reference book or information source
+          <h3>What is it not?</h3>
+          A reference book or information source
         </p>
         <p>A guide to health care or a medical document.</p>
 
-        <h2>How to use this book</h2>
+        <h2 className='new-page'>How to use this book</h2>
         <p>
           The book is split into sections. The sections contain worksheets and
           guides you to walk you through what you have to do to make organising
@@ -46,34 +49,6 @@ const AboutBook = [
         </p>
 
         <p>The sections are below;</p>
-        <ul>
-          <li className='bullets'>
-            Section 1
-            <ul>
-              <li className='bullets-indented'>Advice Using the book</li>
-              <li className='bullets-indented'>
-                Advice for your Hospital Stay
-              </li>
-            </ul>
-          </li>
-          <li className='bullets'>
-            Section 2
-            <ul>
-              <li className='bullets-indented'>
-                Worksheets to help you stay organized
-              </li>
-              <ul>
-                <li className='bullets-indented-2'>Event Timeline</li>
-                <li className='bullets-indented-2'>Daily Diary</li>
-                <li className='bullets-indented-2'>Diagnosis </li>
-                <li className='bullets-indented-2'>Drug Log</li>
-                <li className='bullets-indented-2'>Event Log</li>
-              </ul>
-              <li className='bullets-indented'>Extra resources</li>
-            </ul>
-          </li>
-        </ul>
-
         <h4>Section 1</h4>
         <p>
           {' '}

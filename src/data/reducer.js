@@ -32,7 +32,7 @@ const itemChecklist = ItemChecklist;
 const managingPeople = ManagingPeople;
 const Advice = managingPeople.concat(itemChecklist.concat(hospitalRelease));
 
-const sectionOne = howItStarted.concat(howItStarted.concat(Advice));
+const sectionOne = howItStarted.concat(howItStarted.concat(Advice.concat(aboutBook)));
 // Section 2
 //  const diagnosis = Diagnosis;
 const diagnosis = Diagnosis;
