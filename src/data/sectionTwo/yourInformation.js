@@ -6,6 +6,7 @@ const YourInformation = [
     ChapterNumber: 1,
     articleNumber: 2,
     sectionName: 'Section 2: Your Info',
+    fileName:'yourInformation',
     style: 'gray',
     article: (
       <Fragment>

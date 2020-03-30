@@ -3,9 +3,8 @@ import React, { Fragment } from 'react';
 const Diary = [
   
   {
-    sectionNumber: 2,
-    ChapterNumber: 2,
-    articleNumber: 2,
+    fileName:'diary',
+    articleNumber: 1,
     sectionName: 'Section 2: Daily Diary',
     style: '',
     article: (
@@ -35,9 +34,8 @@ const Diary = [
     tableType: 'Diary'
   },
   {
-    sectionNumber: 2,
-    ChapterNumber: 2,
-    articleNumber: 3,
+    fileName:'diary',
+    articleNumber: 2,
     sectionName: 'Section 2: Daily Diary - Extra',
     style: '',
     article: <Fragment></Fragment>,

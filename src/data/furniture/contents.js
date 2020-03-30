@@ -176,16 +176,6 @@ const Contents = [
             </div>
           </li>
           <li>
-            <div className='container-flex-row'>
-              <div>
-                <h5 className='contents-item'>Events</h5>
-              </div>
-              <div>
-                <h5 className='contents-page-number'>1</h5>
-              </div>
-            </div>
-          </li>
-          <li>
             <div className='container-flex-row bdr-bottom-gray'>
               <div className=''>
                 <h4 className='contents-item'>Thanks</h4>

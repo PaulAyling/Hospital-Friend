@@ -75,7 +75,7 @@ const AboutBook = [
           diagnosis. For each day there is also a space for the Doctors meeting
           notes for questions and answers for the doctor.{' '}
         </p>
-        <p>
+        <p className='new-page'>
           {' '}
           <strong>Diagnosis</strong> This section is most useful if your
           condition is not clear or your symptoms change. If that is the case

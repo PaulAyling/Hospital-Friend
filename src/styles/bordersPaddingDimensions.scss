@@ -15,6 +15,10 @@
   &-underline {
     border-bottom: solid lightgray 1px;
   }
+  &-sides {
+    border-left:solid lightgray 1px;
+    border-right:solid lightgray 1px;
+  }
 }
 
 .padding {

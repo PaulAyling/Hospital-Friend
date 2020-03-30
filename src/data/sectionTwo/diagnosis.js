@@ -3,14 +3,12 @@ import DiagnosisTable from '../../components/molecules/diagnosis-table';
 
 const Diagnosis = [
   {
-    id: '1',
-    sectionNumber: 2,
-    ChapterNumber: 4,
-    articleNumber: 2,
+    fileName:'diagnosis',
+    articleNumber: 1,
     bookSection: 'Diagnosis',
     pageHeader: 'Diagnosis',
     sectionName: 'Section 2: Diagnosis',
-    htmlContent: (
+    article: (
       <section id='content'>
         <h1 class='section-header'>Diagnosis</h1>
         <p class='section-intro-text'>
@@ -32,10 +30,8 @@ const Diagnosis = [
     )
   },
   {
-    id: '2',
-    sectionNumber: 2,
-    ChapterNumber: 4,
-    articleNumber: 1,
+    fileName:'diagnosis',
+    articleNumber: 2,
     bookSection: 'Diagnosis',
     pageHeader: '',
     sectionName: 'Section 2:Diagnosis Log',

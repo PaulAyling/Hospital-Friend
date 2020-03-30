@@ -3,111 +3,52 @@ import React, { Fragment } from 'react';
 const Drugs = [
  
   {
-    id: '4',
-    dsdsd: 'Extra',
-    sectionName: 'Extra: Drug Log',
-    htmlContent: (
-      <section id='content'>
-        <p>
-          Sometimes you can leave hospital and not know what drugs you have
-          taken. This log is somewhere for you to record this.
-        </p>
-        <section id='Container-Drugboxes' className='container-flex-column'>
-          {/* Drugbox  */}
-          <div
-            id='drugbox'
-            className='container-flex-column border-gray margin-bottom3px'>
-            <div className='container-flex-row width1 border-bottom '>
-              <div className='gray width4 text-header-inline '>Drug Name:</div>
-              <div className=''></div>
-            </div>{' '}
-            <div className='container-flex-row width1 border-bottom h-4rem'>
-              <div className='gray width4  text-header-inline'>
-                Drug Purpose:
-              </div>
-              <div className=''></div>
-            </div>
-            <div className='container-flex-row width1 border-bottom   '>
-              <div className='gray width4  text-header-inline'>Dosage:</div>
-              <div className=''></div>
-            </div>
-            <div className='container-flex-row width1 border-bottom   '>
-              <div className='gray width4  text-header-inline'>Frequency:</div>
-              <div className=''></div>
-            </div>
-          </div>
-          {/* Drugbox  */}
-          <div
-            id='drugbox'
-            className='container-flex-column border-gray margin-bottom3px'>
-            <div className='container-flex-row width1 border-bottom '>
-              <div className='gray width4 text-header-inline '>Drug Name:</div>
-              <div className=''></div>
-            </div>{' '}
-            <div className='container-flex-row width1 border-bottom h-4rem'>
-              <div className='gray width4  text-header-inline'>
-                Drug Purpose:
-              </div>
-              <div className=''></div>
-            </div>
-            <div className='container-flex-row width1 border-bottom   '>
-              <div className='gray width4  text-header-inline'>Dosage:</div>
-              <div className=''></div>
-            </div>
-            <div className='container-flex-row width1 border-bottom   '>
-              <div className='gray width4  text-header-inline'>Frequency:</div>
-              <div className=''></div>
-            </div>
-          </div>
-          {/* Drugbox  */}
-          <div
-            id='drugbox'
-            className='container-flex-column border-gray margin-bottom3px'>
-            <div className='container-flex-row width1 border-bottom '>
-              <div className='gray width4 text-header-inline '>Drug Name:</div>
-              <div className=''></div>
-            </div>{' '}
-            <div className='container-flex-row width1 border-bottom h-4rem'>
-              <div className='gray width4  text-header-inline'>
-                Drug Purpose:
-              </div>
-              <div className=''></div>
-            </div>
-            <div className='container-flex-row width1 border-bottom   '>
-              <div className='gray width4  text-header-inline'>Dosage:</div>
-              <div className=''></div>
-            </div>
-            <div className='container-flex-row width1 border-bottom   '>
-              <div className='gray width4  text-header-inline'>Frequency:</div>
-              <div className=''></div>
-            </div>
-          </div>
-          {/* Drugbox  */}
-          <div
-            id='drugbox'
-            className='container-flex-column border-gray margin-bottom3px'>
-            <div className='container-flex-row width1 border-bottom '>
-              <div className='gray width4 text-header-inline '>Drug Name:</div>
-              <div className=''></div>
-            </div>{' '}
-            <div className='container-flex-row width1 border-bottom h-4rem'>
-              <div className='gray width4  text-header-inline'>
-                Drug Purpose:
-              </div>
-              <div className=''></div>
-            </div>
-            <div className='container-flex-row width1 border-bottom   '>
-              <div className='gray width4  text-header-inline'>Dosage:</div>
-              <div className=''></div>
-            </div>
-            <div className='container-flex-row width1 border-bottom   '>
-              <div className='gray width4  text-header-inline'>Frequency:</div>
-              <div className=''></div>
-            </div>
-          </div>
-        </section>
-      </section>
-    )
+    fileName:'drugs',
+    articleNumber:1,
+    article: (
+      <Fragment>
+        <h1>Drug Log</h1>
+        <p>A place to record drugs you have taken in Hospital</p>
+      </Fragment>
+     
+    ),
+    tableStyleCol1: '1',
+    tableStyleCol2: '3',
+    tableData: [
+      { c1: 'Drug Name', c2: '' },
+      { c1: 'Description', c2: '' },
+      { c1: 'Dosage & Frequency', c2: '' },
+      { c1: ' ', c2: '' },
+      { c1: 'Drug Name', c2: '' },
+      { c1: 'Description', c2: '' },
+      { c1: 'Dosage & Frequency', c2: '' },
+    ],
+    tableType: 'TableTwoColum'
+
+  },
+  {
+    fileName:'drugs',
+    articleNumber:2,
+    article: (
+      <Fragment>
+        <h1>Drug Log</h1>
+      </Fragment>
+     
+    ),
+    tableStyleCol1: '1',
+    tableStyleCol2: '3',
+    tableData: [
+      { c1: 'Drug Name', c2: '' },
+      { c1: 'Description', c2: '' },
+      { c1: 'Dosage & Frequency', c2: '' },
+      { c1: ' ', c2: '' },
+      { c1: ' ', c2: '' },
+      { c1: 'Drug Name', c2: '' },
+      { c1: 'Description', c2: '' },
+      { c1: 'Dosage & Frequency', c2: '' },
+    ],
+    tableType: 'TableTwoColum'
+
   }
 ];
 

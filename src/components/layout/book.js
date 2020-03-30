@@ -80,47 +80,65 @@ export default function(props) {
   });
   const yourDetails = Data.filter(function(getFile) {
     return (
-      getFile.sectionNumber === 2 &&
-      getFile.ChapterNumber === 1 &&
-      getFile.articleNumber === 2
+      getFile.fileName === 'yourInformation'
     );
   });
   const timeline = Data.filter(function(getFile) {
     return (
-      getFile.sectionNumber === 2 &&
-      getFile.ChapterNumber === 2 &&
+      getFile.fileName === 'timeline' &&
       getFile.articleNumber === 1
+    );
+  });
+  const timelineP2 = Data.filter(function(getFile) {
+    return (
+      getFile.fileName === 'timeline' &&
+      getFile.articleNumber === 2
     );
   });
   const diary = Data.filter(function(getFile) {
     return (
-      getFile.sectionNumber === 2 &&
-      getFile.ChapterNumber === 2 &&
-      getFile.articleNumber === 2
-    );
-  });
-  const diaryPageTwo = Data.filter(function(getFile) {
-    return (
-      getFile.sectionNumber === 2 &&
-      getFile.ChapterNumber === 2 &&
-      getFile.articleNumber === 3
-    );
-  });
-  const diagnosisOne = Data.filter(function(getFile) {
-    return (
-      getFile.sectionNumber === 2 &&
-      getFile.ChapterNumber === 4 &&
+      getFile.fileName === 'diary' &&
       getFile.articleNumber === 1
     );
   });
+  const diaryP2 = Data.filter(function(getFile) {
+    return (
+      getFile.fileName === 'diary' &&
+      getFile.articleNumber === 2
+    );
+  });
+  const diagnosis = Data.filter(function(getFile) {
+    return (
+      getFile.fileName === 'diagnosis' &&
+      getFile.articleNumber === 1
+    );
+  });
+  const diagnosisP1 = Data.filter(function(getFile) {
+    return (
+      getFile.fileName === 'diagnosis' &&
+      getFile.articleNumber === 2
+    );
+  });
+  const drugs = Data.filter(function(getFile) {
+    return (
+      getFile.fileName === 'drugs' &&
+      getFile.articleNumber === 1
+    );
+  });
+  const drugsP2 = Data.filter(function(getFile) {
+    return (
+      getFile.fileName === 'drugs' &&
+      getFile.articleNumber === 2
+    );
+  });
 
-  console.log(diagnosisOne)
+
 
   return (
     <section
       id='Book Container'
       className={'container-flex-columm page-width-' + props.bookFormat}>
-
+{/*  
        <Page bookFormat={props.bookFormat} data={stylesExamples} />
       <PageNoPaddingImage bookFormat={props.bookFormat} data={frontCover} />
 
@@ -131,14 +149,22 @@ export default function(props) {
       <PageBlock bookFormat={props.bookFormat} data={aboutTheBook} />
       <PageBlock bookFormat={props.bookFormat} data={AdviceForYourStayThingsToBring}/>
       <PageBlock bookFormat={props.bookFormat} data={AdviceForYourStayManagingPeople}/>
-      <PageBlock bookFormat={props.bookFormat} data={AdviceForYourStayLeavingHospital}/>
+      <PageBlock bookFormat={props.bookFormat} data={AdviceForYourStayLeavingHospital}/> */}
 
 
-      <PageTableTwoColumn bookFormat={props.bookFormat} data={yourDetails} />
-      <PageTableTwoColumn bookFormat={props.bookFormat} data={timeline} />
-      <PageTableTwoColumn  bookFormat={props.bookFormat} data={diary} />
-      <PageTableTwoColumn  bookFormat={props.bookFormat} data={diaryPageTwo} />
-      <Page bookFormat={props.bookFormat} data={diagnosisOne} /> 
+      {/* <PageTableTwoColumn bookFormat={props.bookFormat} data={yourDetails} />
+     <PageTableTwoColumn bookFormat={props.bookFormat} data={timeline} />
+     <PageTableTwoColumn bookFormat={props.bookFormat} data={timelineP2} /> 
+       <PageTableTwoColumn  bookFormat={props.bookFormat} data={diary} />
+       <PageTableTwoColumn  bookFormat={props.bookFormat} data={diaryP2} />*/}
+
+
+
+       <Page bookFormat={props.bookFormat} data={contents} />
+      <Page bookFormat={props.bookFormat} data={diagnosis} />   
+      <Page bookFormat={props.bookFormat} data={diagnosisP1} />   
+      <PageTableTwoColumn bookFormat={props.bookFormat} data={drugs} />   
+      <PageTableTwoColumn bookFormat={props.bookFormat} data={drugsP2} />   
     </section>
   );
 }

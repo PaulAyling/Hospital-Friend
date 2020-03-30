@@ -46,7 +46,7 @@ const HospitalRelease = [
           prepared for it.
         </p>
 
-        <h2>Release Meeting Checklist</h2>
+        <h2 className='new-page'>Release Meeting Checklist</h2>
         <ul>
           <li className='bullets'>
             If you have chosen to have another person attend ensure you both
