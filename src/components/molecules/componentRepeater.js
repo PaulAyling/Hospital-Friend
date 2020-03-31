@@ -12,7 +12,11 @@ export default function(props) {
       <ChildrenComponent
         key={i}
         bookFormat={props.bookFormat} 
+        childrenComponent={props.childrenComponent}
         data={props.data}  
+        nextChildComponent={props.nextChildComponent}
+        data1={props.data1}
+        data2={props.data2}
       />
     ));
   };

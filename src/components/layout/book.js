@@ -109,12 +109,11 @@ export default function(props) {
     return getFile.fileName === 'drugs' && getFile.articleNumber === 2;
   });
 
-
-  const yourDetailsNbr=1;
-  const timelineNbr=1;
-  const diaryNbr=1;
-  const diagnosisNbr=1;
-  const drugsNbr=1;
+  const yourDetailsNbr = 1;
+  const timelineNbr = 1;
+  const diaryNbr = 2;
+  const diagnosisNbr = 1;
+  const drugsNbr = 1;
 
   // const yourDetailsNbr=3;
   // const timelineNbr=3;
@@ -126,8 +125,7 @@ export default function(props) {
     <section
       id='Book Container'
       className={'container-flex-columm page-width-' + props.bookFormat}>
-       
-       <Page bookFormat={props.bookFormat} data={stylesExamples} />
+      <Page bookFormat={props.bookFormat} data={stylesExamples} />
       <PageNoPaddingImage bookFormat={props.bookFormat} data={frontCover} />
 
       <DataSmy bookFormat={props.bookFormat} data={Data} />
@@ -135,9 +133,18 @@ export default function(props) {
 
       <PageBlock bookFormat={props.bookFormat} data={StartedWithAmbo} />
       <PageBlock bookFormat={props.bookFormat} data={aboutTheBook} />
-      <PageBlock bookFormat={props.bookFormat} data={AdviceForYourStayThingsToBring}/>
-      <PageBlock bookFormat={props.bookFormat} data={AdviceForYourStayManagingPeople}/>
-      <PageBlock bookFormat={props.bookFormat} data={AdviceForYourStayLeavingHospital}/>
+      <PageBlock
+        bookFormat={props.bookFormat}
+        data={AdviceForYourStayThingsToBring}
+      />
+      <PageBlock
+        bookFormat={props.bookFormat}
+        data={AdviceForYourStayManagingPeople}
+      />
+      <PageBlock
+        bookFormat={props.bookFormat}
+        data={AdviceForYourStayLeavingHospital}
+      />
       <PageTableTwoColumn bookFormat={props.bookFormat} data={yourDetails} />
       <ComponentRepeater
         bookFormat={props.bookFormat}
@@ -150,12 +157,6 @@ export default function(props) {
         bookFormat={props.bookFormat}
         data={timelineP2}
         repeats={timelineNbr}
-        childrenComponent={PageTableTwoColumn}
-      />
-      <ComponentRepeater
-        bookFormat={props.bookFormat}
-        data={diaryP2}
-        repeats={diaryNbr}
         childrenComponent={PageTableTwoColumn}
       />
       <Page bookFormat={props.bookFormat} data={diagnosis} />
@@ -171,6 +172,14 @@ export default function(props) {
         data={drugsP2}
         repeats={drugsNbr}
         childrenComponent={PageTableTwoColumn}
+      />
+      <ComponentRepeater
+        bookFormat={props.bookFormat}
+        repeats={diaryNbr}
+        childrenComponent={TwoPageLayout}
+        nextChildComponent={PageTableTwoColumn}
+        data1={diary}
+        data2={diaryP2}
       />
     </section>
   );
