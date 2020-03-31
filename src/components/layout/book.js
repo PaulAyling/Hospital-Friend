@@ -5,13 +5,10 @@ import PageNoPaddingImage from './page-nopadding-image';
 import DataSmy from '../layout/dataSmy';
 import PageTableTwoColumn from './page-table-two-column';
 import TwoPageLayout from './two-page-layout';
-import ComponentRepeater from '../molecules/componentRepeater'
-
+import ComponentRepeater from '../molecules/componentRepeater';
 
 export default function(props) {
   const Data = props.data;
-
-
 
   const stylesExamples = Data.filter(function(getFile) {
     return getFile.sectionNumber === 0 && getFile.ChapterNumber === 1;
@@ -37,11 +34,8 @@ export default function(props) {
     );
   });
   const aboutTheBook = Data.filter(function(getFile) {
-    return (
-      getFile.fileName === 'aboutThisBook'
-    );
+    return getFile.fileName === 'aboutThisBook';
   });
-
 
   const AdviceForYourStay = Data.filter(function(getFile) {
     return (
@@ -81,66 +75,58 @@ export default function(props) {
   });
   const yourDetails = Data.filter(function(getFile) {
     return (
-      getFile.fileName === 'yourInformation'
+      getFile.fileName === 'yourInformation' && getFile.articleNumber === 1
+    );
+  });
+  const yourDetailsP2 = Data.filter(function(getFile) {
+    return (
+      getFile.fileName === 'yourInformation' && getFile.articleNumber === 2
     );
   });
   const timeline = Data.filter(function(getFile) {
-    return (
-      getFile.fileName === 'timeline' &&
-      getFile.articleNumber === 1
-    );
+    return getFile.fileName === 'timeline' && getFile.articleNumber === 1;
   });
   const timelineP2 = Data.filter(function(getFile) {
-    return (
-      getFile.fileName === 'timeline' &&
-      getFile.articleNumber === 2
-    );
+    return getFile.fileName === 'timeline' && getFile.articleNumber === 2;
   });
 
   const diary = Data.filter(function(getFile) {
-    return (
-      getFile.fileName === 'diary' &&
-      getFile.articleNumber === 1
-    );
+    return getFile.fileName === 'diary' && getFile.articleNumber === 1;
   });
   const diaryP2 = Data.filter(function(getFile) {
-    return (
-      getFile.fileName === 'diary' &&
-      getFile.articleNumber === 2
-    );
+    return getFile.fileName === 'diary' && getFile.articleNumber === 2;
   });
   const diagnosis = Data.filter(function(getFile) {
-    return (
-      getFile.fileName === 'diagnosis' &&
-      getFile.articleNumber === 1
-    );
+    return getFile.fileName === 'diagnosis' && getFile.articleNumber === 1;
   });
-  const diagnosisP1 = Data.filter(function(getFile) {
-    return (
-      getFile.fileName === 'diagnosis' &&
-      getFile.articleNumber === 2
-    );
+  const diagnosisP2 = Data.filter(function(getFile) {
+    return getFile.fileName === 'diagnosis' && getFile.articleNumber === 2;
   });
   const drugs = Data.filter(function(getFile) {
-    return (
-      getFile.fileName === 'drugs' &&
-      getFile.articleNumber === 1
-    );
+    return getFile.fileName === 'drugs' && getFile.articleNumber === 1;
   });
   const drugsP2 = Data.filter(function(getFile) {
-    return (
-      getFile.fileName === 'drugs' &&
-      getFile.articleNumber === 2
-    );
+    return getFile.fileName === 'drugs' && getFile.articleNumber === 2;
   });
 
 
+  const yourDetailsNbr=1;
+  const timelineNbr=1;
+  const diaryNbr=1;
+  const diagnosisNbr=1;
+  const drugsNbr=1;
+
+  // const yourDetailsNbr=3;
+  // const timelineNbr=3;
+  // const diaryNbr=30;
+  // const diagnosisNbr=3;
+  // const drugsNbr=3;
 
   return (
     <section
       id='Book Container'
       className={'container-flex-columm page-width-' + props.bookFormat}>
-{/*  
+       
        <Page bookFormat={props.bookFormat} data={stylesExamples} />
       <PageNoPaddingImage bookFormat={props.bookFormat} data={frontCover} />
 
@@ -151,23 +137,41 @@ export default function(props) {
       <PageBlock bookFormat={props.bookFormat} data={aboutTheBook} />
       <PageBlock bookFormat={props.bookFormat} data={AdviceForYourStayThingsToBring}/>
       <PageBlock bookFormat={props.bookFormat} data={AdviceForYourStayManagingPeople}/>
-      <PageBlock bookFormat={props.bookFormat} data={AdviceForYourStayLeavingHospital}/> */}
-{/* 
-
-       <PageTableTwoColumn bookFormat={props.bookFormat} data={yourDetails} />
-     <PageTableTwoColumn bookFormat={props.bookFormat} data={timeline} /> */}
-     <ComponentRepeater bookFormat={props.bookFormat} data={timelineP2} multiplier='5' childrenComponent={PageTableTwoColumn}/>
-     {/* <PageTableTwoColumn bookFormat={props.bookFormat} data={timelineP2} />  */}
-       {/* <PageTableTwoColumn  bookFormat={props.bookFormat} data={diary} />
-       <PageTableTwoColumn  bookFormat={props.bookFormat} data={diaryP2} />*
-
-
-
-       <Page bookFormat={props.bookFormat} data={contents} />
-      <Page bookFormat={props.bookFormat} data={diagnosis} />   
-      <Page bookFormat={props.bookFormat} data={diagnosisP1} />   
-      <PageTableTwoColumn bookFormat={props.bookFormat} data={drugs} />   
-      <PageTableTwoColumn bookFormat={props.bookFormat} data={drugsP2} />    */}
+      <PageBlock bookFormat={props.bookFormat} data={AdviceForYourStayLeavingHospital}/>
+      <PageTableTwoColumn bookFormat={props.bookFormat} data={yourDetails} />
+      <ComponentRepeater
+        bookFormat={props.bookFormat}
+        data={yourDetailsP2}
+        repeats={yourDetailsNbr}
+        childrenComponent={PageTableTwoColumn}
+      />
+      <PageTableTwoColumn bookFormat={props.bookFormat} data={timeline} />
+      <ComponentRepeater
+        bookFormat={props.bookFormat}
+        data={timelineP2}
+        repeats={timelineNbr}
+        childrenComponent={PageTableTwoColumn}
+      />
+      <ComponentRepeater
+        bookFormat={props.bookFormat}
+        data={diaryP2}
+        repeats={diaryNbr}
+        childrenComponent={PageTableTwoColumn}
+      />
+      <Page bookFormat={props.bookFormat} data={diagnosis} />
+      <ComponentRepeater
+        bookFormat={props.bookFormat}
+        data={diagnosisP2}
+        repeats={diagnosisNbr}
+        childrenComponent={Page}
+      />
+      <PageTableTwoColumn bookFormat={props.bookFormat} data={drugs} />
+      <ComponentRepeater
+        bookFormat={props.bookFormat}
+        data={drugsP2}
+        repeats={drugsNbr}
+        childrenComponent={PageTableTwoColumn}
+      />
     </section>
   );
 }
