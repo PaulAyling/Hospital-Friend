@@ -73,7 +73,8 @@ const Timeline = [
  
 
     ],
-    tableType: 'TableTwoColum'
+    tableType: 'TableTwoColum',
+    repeatNbr:5,
   }
 ];
 

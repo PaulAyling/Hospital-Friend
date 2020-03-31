@@ -5,6 +5,7 @@ import PageNoPaddingImage from './page-nopadding-image';
 import DataSmy from '../layout/dataSmy';
 import PageTableTwoColumn from './page-table-two-column';
 import TwoPageLayout from './two-page-layout';
+import ComponentRepeater from '../molecules/componentRepeater'
 
 
 export default function(props) {
@@ -40,7 +41,7 @@ export default function(props) {
       getFile.fileName === 'aboutThisBook'
     );
   });
-  console.log(aboutTheBook)
+
 
   const AdviceForYourStay = Data.filter(function(getFile) {
     return (
@@ -95,6 +96,7 @@ export default function(props) {
       getFile.articleNumber === 2
     );
   });
+
   const diary = Data.filter(function(getFile) {
     return (
       getFile.fileName === 'diary' &&
@@ -150,13 +152,14 @@ export default function(props) {
       <PageBlock bookFormat={props.bookFormat} data={AdviceForYourStayThingsToBring}/>
       <PageBlock bookFormat={props.bookFormat} data={AdviceForYourStayManagingPeople}/>
       <PageBlock bookFormat={props.bookFormat} data={AdviceForYourStayLeavingHospital}/> */}
+{/* 
 
-
-      {/* <PageTableTwoColumn bookFormat={props.bookFormat} data={yourDetails} />
-     <PageTableTwoColumn bookFormat={props.bookFormat} data={timeline} />
-     <PageTableTwoColumn bookFormat={props.bookFormat} data={timelineP2} /> 
-       <PageTableTwoColumn  bookFormat={props.bookFormat} data={diary} />
-       <PageTableTwoColumn  bookFormat={props.bookFormat} data={diaryP2} />*/}
+       <PageTableTwoColumn bookFormat={props.bookFormat} data={yourDetails} />
+     <PageTableTwoColumn bookFormat={props.bookFormat} data={timeline} /> */}
+     <ComponentRepeater bookFormat={props.bookFormat} data={timelineP2} multiplier='5' childrenComponent={PageTableTwoColumn}/>
+     {/* <PageTableTwoColumn bookFormat={props.bookFormat} data={timelineP2} />  */}
+       {/* <PageTableTwoColumn  bookFormat={props.bookFormat} data={diary} />
+       <PageTableTwoColumn  bookFormat={props.bookFormat} data={diaryP2} />*
 
 
 
@@ -164,7 +167,7 @@ export default function(props) {
       <Page bookFormat={props.bookFormat} data={diagnosis} />   
       <Page bookFormat={props.bookFormat} data={diagnosisP1} />   
       <PageTableTwoColumn bookFormat={props.bookFormat} data={drugs} />   
-      <PageTableTwoColumn bookFormat={props.bookFormat} data={drugsP2} />   
+      <PageTableTwoColumn bookFormat={props.bookFormat} data={drugsP2} />    */}
     </section>
   );
 }
