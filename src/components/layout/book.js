@@ -99,6 +99,9 @@ export default function(props) {
     return getFile.fileName === 'timeline' && getFile.articleNumber === 2;
   });
 
+  const diaryIntro = Data.filter(function(getFile) {
+    return getFile.fileName === 'diary' && getFile.articleNumber === 3;
+  });
   const diary = Data.filter(function(getFile) {
     return getFile.fileName === 'diary' && getFile.articleNumber === 1;
   });
@@ -141,7 +144,7 @@ export default function(props) {
       <Page bookFormat={props.bookFormat} data={contents} />
       <Page bookFormat={props.bookFormat} data={divider1} />
 
-      <PageBlock bookFormat={props.bookFormat} data={StartedWithAmbo} />
+      <Page bookFormat={props.bookFormat} data={StartedWithAmbo} />
       <PageBlock bookFormat={props.bookFormat} data={aboutTheBook} />
       <Page
         bookFormat={props.bookFormat}
@@ -185,6 +188,7 @@ export default function(props) {
         repeats={drugsNbr}
         childrenComponent={PageTableTwoColumn}
       />
+       <Page bookFormat={props.bookFormat} data={diaryIntro} />
       <ComponentRepeater
         bookFormat={props.bookFormat}
         repeats={diaryNbr}

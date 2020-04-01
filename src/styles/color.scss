@@ -1,15 +1,23 @@
-
-
-.color-light{color:$color-light};
-.color-dark{color:$color-dark};
-
-.color-background-primary{background:$color-background-primary};
-.color-background-secondary{background:$color-background-secondary};
-.color-background-tertiary{background:$color-background-tertiary};
-
-.gray{
-  background:lightgray;
+.color-light {
+  color: $color-light;
 }
-.lightgray{
-  background:#E5EFFF;
+.color-dark {
+  color: $color-dark;
+}
+
+.color-background-primary {
+  background: $color-background-primary;
+}
+.color-background-secondary {
+  background: $color-background-secondary;
+}
+.color-background-tertiary {
+  background: $color-background-tertiary;
+}
+
+.gray {
+  background: lightgray;
+}
+.lightgray {
+  background: #F5F5F5;
 }

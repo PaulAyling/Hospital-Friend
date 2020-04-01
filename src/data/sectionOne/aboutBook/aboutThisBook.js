@@ -52,24 +52,24 @@ const AboutBook = [
         <h4>Section 1</h4>
         <p>
           {' '}
-          <strong>Advice on how to use this book </strong>How to use what parts
+          <strong>Advice on how to use this book: </strong>How to use what parts
           of this book
         </p>
         <p>
-          <strong>Advice for your Hospital Stay </strong>This is a small section
+          <strong>Advice for your Hospital Stay: </strong>This is a small section
           designed to give you advice on what to expect and how to manage in
           Hospital
         </p>
         <h4>Section 2</h4>
         <p>
           {' '}
-          <strong>Event Timeline </strong>Intended for you to summarise the main
+          <strong>Event Timeline: </strong>Intended for you to summarise the main
           events during your illness to make it easier to communicate with staff
           about what has happened.
         </p>
         <p className='pagebreak-inline'>
           {' '}
-          <strong>Daily Diary</strong>This is a one page per day diary, there is
+          <strong>Daily Diary:</strong>This is a one page per day diary, there is
           enough pages for 30 days. It can be useful to gain perspective on your
           experience or help if there are difficulties in treatment or
           diagnosis. For each day there is also a space for the Doctors meeting
@@ -77,18 +77,18 @@ const AboutBook = [
         </p>
         <p >
           {' '}
-          <strong>Diagnosis</strong> This section is most useful if your
+          <strong>Diagnosis:</strong> This section is most useful if your
           condition is not clear or your symptoms change. If that is the case
           then you can build a comprehensive record here which may make
           diagnosis easier.
         </p>
         <p>
           {' '}
-          <strong>Drug log</strong>Tables for you to record your medication{' '}
+          <strong>Drug log: </strong>Tables for you to record your medication{' '}
         </p>
         <p>
           {' '}
-          <strong>Extra Resources </strong>Other materials that may be helpful
+          <strong>Extra Resources: </strong>Other materials that may be helpful
         </p>
       </Fragment>
     )

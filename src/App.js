@@ -11,6 +11,8 @@ import RenderMobi from './pages/renderMobi';
 import RenderPdf from './pages/renderPdf';
 import './styles/App.scss'
 
+import Scratch from '../src/devSandbox/scratch'
+
 export default class App extends Component {
   // state = SectionOneData.content;
 
@@ -23,6 +25,7 @@ export default class App extends Component {
           {/* <Route exact path='/pdf' component={RenderPdf} /> */}
         </Router>
         <RenderMobi Render='mobi' data={Data} />
+        {/* <Scratch/> */}
    
       </div>
     );

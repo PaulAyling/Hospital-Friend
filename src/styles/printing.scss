@@ -1,0 +1,15 @@
+@page{
+  width: 400px;
+  background:gray;
+  .box{
+    background:blue;
+  }
+}
+
+.box{
+  width: 100px;
+  height:400px;
+  background:red;
+  color:white;
+  border:black 6px solid;
+}

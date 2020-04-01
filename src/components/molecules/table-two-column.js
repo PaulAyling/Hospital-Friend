@@ -6,15 +6,15 @@ class TableTwoColumn extends React.Component {
   }
   render() {
     const currentData = this.props.data[0];
-    console.log(JSON.stringify(currentData));
+
 
     const elementRender = currentData.tableData.map(elements => {
       return (
         <div className='container-flex-row border-lightgray'>
           <div
             className={
-              'table-side-header ' +
-              currentData.style +
+              
+              currentData.style+
               ' container-flex-width-' +
               currentData.tableStyleCol1
             }>

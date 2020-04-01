@@ -23,12 +23,13 @@
 .pagebreak {
   break-before:always ;
   box-sizing: border-box;
-  border-bottom: solid lightgray 20px;
+  // border-bottom: solid lightgray 20px;
 }
 .pagebreak-inline{
-  page-break-before: always;
+  break-before: always;
   box-sizing: border-box;
-  border-bottom:solid lightgray 20px;
+  // border-bottom:solid lightgray 20px;
+  margin-top:5rem;
 
 }
 

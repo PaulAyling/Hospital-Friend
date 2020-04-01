@@ -17,7 +17,7 @@ const HospitalRelease = [
           are some of the best things to do and watch for when you are being
           released.
         </p>
-        <h2>The release process</h2>
+        <h2 className='pagebreak-inline'>The release process</h2>
         <p>It normally goes something like this</p>
         <ul>
           <li className='bullets'>
@@ -29,7 +29,7 @@ const HospitalRelease = [
           <li className='bullets'>You make your way home</li>
         </ul>
 
-        <h2 className='new-page'>About after your stay in Hospital</h2>
+        <h2 className='pagebreak-inline'>About after your stay in Hospital</h2>
 
         <p>
           Depending on your current symptoms and network how you are going to
@@ -46,7 +46,7 @@ const HospitalRelease = [
           prepared for it.
         </p>
 
-        <h2 className='new-page'>Release Meeting Checklist</h2>
+        <h2 className='pagebreak-inline'>Release Meeting Checklist</h2>
         <ul>
           <li className='bullets'>
             If you have chosen to have another person attend ensure you both

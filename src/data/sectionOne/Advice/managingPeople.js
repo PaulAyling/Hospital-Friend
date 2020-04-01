@@ -6,7 +6,7 @@ const ManagingPeople = [
     sectionNumber: 1,
     ChapterNumber: 4,
     articleNumber: 3,
-    sectionName: 'Advice For you Hospital Stay > Managing People',
+    sectionName: 'Section1: Advice For you Hospital Stay > Managing People',
     containerStyling: '',
     article: (
       <Fragment>

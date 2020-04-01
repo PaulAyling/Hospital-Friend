@@ -4,7 +4,7 @@ const YourInformation = [
     fileName:'yourInformation',
     articleNumber: 1,
     sectionName: 'Section 2: Your Info',
-    style: 'gray',
+    style: 'lightgray table-side-header ',
     article: (
       <Fragment>
         <h1>Your Information</h1>
@@ -30,7 +30,7 @@ const YourInformation = [
     articleNumber: 2,
     sectionName: 'Section 2: Your Info',
     fileName:'yourInformation',
-    style: 'gray',
+    style: 'lightgray table-side-header ',
     article: (
       <Fragment>
         <h1>Your Information</h1>

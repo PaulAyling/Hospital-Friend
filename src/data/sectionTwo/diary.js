@@ -2,13 +2,14 @@ import React, { Fragment } from 'react';
 
 const Diary = [
   
+  
   {
     fileName:'diary',
     articleNumber: 1,
     sectionName: 'Section 2: Daily Diary',
-    style: '',
+    style: 'table-side-header-var1 ',
     article: (
-      <Fragment>
+      <Fragment>  <h3 className='padding-1'>Day Diary</h3>
         <div className='container-flex-row border-lightgray'>
           <div className='table-side-header gray container-flex-width-1 text-align-center'>
             Todays Date
@@ -37,7 +38,7 @@ const Diary = [
     fileName:'diary',
     articleNumber: 2,
     sectionName: 'Section 2: Daily Diary - Extra',
-    style: '',
+    style: 'table-side-header-var1 ',
     article: <Fragment></Fragment>,
     tableStyleCol1: '1',
     tableStyleCol2: '3',
@@ -54,7 +55,31 @@ const Diary = [
       { c1: ' ', c2: '' }
     ],
     tableType: 'Diary'
-  }
+  },
+  {
+    fileName:'diary',
+    articleNumber: 3,
+    sectionName: 'Section 2: Daily Diary',
+    style: '',
+    article: (
+      <Fragment>
+        <h2>Daily Diary</h2>
+        <p>
+          {' '}
+          <strong>Daily Diary:</strong>This is a one page per day diary, there is
+          enough pages for 30 days. It can be useful to gain perspective on your
+          experience or help if there are difficulties in treatment or
+          diagnosis. For each day there is also a space for the Doctors meeting
+          notes for questions and answers for the doctor.{' '}
+        </p>
+      </Fragment>
+    ),
+    tableStyleCol1: '1',
+    tableStyleCol2: '3',
+    tableData: [
+    ],
+    tableType: 'Diary'
+  },
 ];
 
 export default Diary;

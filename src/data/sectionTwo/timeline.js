@@ -6,7 +6,7 @@ const Timeline = [
     fileName:'timeline' , 
     articleNumber: 1,
     sectionName: 'Section 2: Timeline Summary',
-    style: 'gray',
+    style: 'lightgray table-side-header ',
     article: (
       <Fragment>
         <h1>Timeline</h1>
@@ -45,7 +45,7 @@ const Timeline = [
     fileName:'timeline' , 
     articleNumber: 2,
     sectionName: 'Section 2: Timeline Summary',
-    style: 'gray',
+    style: 'lightgray table-side-header ',
     article: (
       <Fragment>
         <h1>Timeline</h1>

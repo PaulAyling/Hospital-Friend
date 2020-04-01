@@ -23,7 +23,8 @@ const Drugs = [
       { c1: 'Description', c2: '' },
       { c1: 'Dosage & Frequency', c2: '' },
     ],
-    tableType: 'TableTwoColum'
+    tableType: 'TableTwoColum',
+    style:'lightgray table-side-header '
 
   },
   {
@@ -47,7 +48,8 @@ const Drugs = [
       { c1: 'Description', c2: '' },
       { c1: 'Dosage & Frequency', c2: '' },
     ],
-    tableType: 'TableTwoColum'
+    tableType: 'TableTwoColum',
+    style:'lightgray table-side-header '
 
   }
 ];
