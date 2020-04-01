@@ -41,7 +41,7 @@ const AboutBook = [
         </p>
         <p>A guide to health care or a medical document.</p>
 
-        <h2 className='new-page'>How to use this book</h2>
+        <h2 className='pagebreak-inline'>How to use this book</h2>
         <p>
           The book is split into sections. The sections contain worksheets and
           guides you to walk you through what you have to do to make organising
@@ -67,7 +67,7 @@ const AboutBook = [
           events during your illness to make it easier to communicate with staff
           about what has happened.
         </p>
-        <p>
+        <p className='pagebreak-inline'>
           {' '}
           <strong>Daily Diary</strong>This is a one page per day diary, there is
           enough pages for 30 days. It can be useful to gain perspective on your
@@ -75,7 +75,7 @@ const AboutBook = [
           diagnosis. For each day there is also a space for the Doctors meeting
           notes for questions and answers for the doctor.{' '}
         </p>
-        <p className='new-page'>
+        <p >
           {' '}
           <strong>Diagnosis</strong> This section is most useful if your
           condition is not clear or your symptoms change. If that is the case

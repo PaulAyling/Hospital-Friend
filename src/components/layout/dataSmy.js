@@ -11,7 +11,7 @@ export default function(props) {
     </div>
     )
   });
-  return <section className='new-page border-lightgray'>
+  return <section className='pagebreak  border-lightgray'>
   {elementsRender}
   
   

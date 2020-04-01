@@ -1,0 +1,19 @@
+.container-flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.page-width-mobi {
+  min-width: 1072px;
+  max-width: 1072px;
+}
+.new-page {
+  break-before: page;
+  box-sizing: border-box;
+  border-bottom: solid lightgray 20px;
+}
+.page-size-mobi {
+  min-height: 1505px;
+  max-height: 1505px;
+  min-width: 1072px;
+  max-width: 1072px;
+}

@@ -10,7 +10,7 @@ const Diary = [
     article: (
       <Fragment>
         <div className='container-flex-row border-lightgray'>
-          <div className='table-side-header lightgray container-flex-width-1 text-align-center'>
+          <div className='table-side-header gray container-flex-width-1 text-align-center'>
             Todays Date
           </div>
           <div className='table-side-header  container-flex-width-3 text-align-center'>

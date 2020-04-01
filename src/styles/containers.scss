@@ -1,11 +1,11 @@
 // Output format Styles
-.page-size{
-  &-mobi{
+.page-size {
+  &-mobi {
     min-height: $page-kindle-paperwhite-height;
     max-height: $page-kindle-paperwhite-height;
     min-width: $page-kindle-paperwhite-width;
     max-width: $page-kindle-paperwhite-width;
-    &-img-full-hieght{
+    &-img-full-hieght {
       min-height: $page-kindle-paperwhite-height-img;
       max-height: $page-kindle-paperwhite-height-img;
       min-width: $page-kindle-paperwhite-width-img;
@@ -13,16 +13,23 @@
     }
   }
 }
-.page-width{
-    &-mobi{
-      min-width: $page-kindle-paperwhite-width;
-      max-width: $page-kindle-paperwhite-width;
-    }
+.page-width {
+  &-mobi {
+    min-width: $page-kindle-paperwhite-width;
+    max-width: $page-kindle-paperwhite-width;
   }
-.new-page{
+}
+
+.pagebreak {
+  break-before:always ;
+  box-sizing: border-box;
+  border-bottom: solid lightgray 20px;
+}
+.pagebreak-inline{
   page-break-before: always;
   box-sizing: border-box;
-  border-bottom:solid lightgray 20px
+  border-bottom:solid lightgray 20px;
+
 }
 
 .container {
@@ -44,33 +51,33 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+      }
     }
-  }
-    &-width{
-      &-1{
-        width:30%;
+    &-width {
+      &-1 {
+        width: 30%;
       }
-      &-2{
-        flex-grow:2;
+      &-2 {
+        flex-grow: 2;
       }
-      &-3{
-        flex-grow:3;
+      &-3 {
+        flex-grow: 3;
       }
     }
   }
   &-img-full {
-    width:100%;
-    height: ( $page-current-view-height - 4);
+    width: 100%;
+    height: ($page-current-view-height - 4);
   }
-  &-full-width{
-    min-width:$page-current-view-width;
+  &-full-width {
+    min-width: $page-current-view-width;
   }
-  &-book-divider{
-    height:1000px;
-    &-img{
-      width:100%;
-      max-height: ( $page-current-view-height - 700);
-      padding-top:3rem;
+  &-book-divider {
+    height: 1000px;
+    &-img {
+      width: 100%;
+      max-height: ($page-current-view-height - 700);
+      padding-top: 3rem;
       box-sizing: border-box;
     }
   }

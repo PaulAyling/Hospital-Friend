@@ -6,19 +6,28 @@ import DataSmy from '../layout/dataSmy';
 import PageTableTwoColumn from './page-table-two-column';
 import TwoPageLayout from './two-page-layout';
 import ComponentRepeater from '../molecules/componentRepeater';
+import Furniture from '../../data/furniture/furniture'
 
 export default function(props) {
   const Data = props.data;
-
+//Furniture
+  const divider1 = Data.filter(function(getFile) {
+    return getFile.fileName === 'furniture' && getFile.item === 'divider' && getFile.articleNumber === 1;
+  });
+  const divider2 = Data.filter(function(getFile) {
+    return getFile.fileName === 'furniture'  && getFile.item === 'divider' && getFile.articleNumber === 2;
+  });
   const stylesExamples = Data.filter(function(getFile) {
-    return getFile.sectionNumber === 0 && getFile.ChapterNumber === 1;
+    return getFile.fileName === 'furniture'   && getFile.articleNumber === 1;
   });
   const frontCover = Data.filter(function(getFile) {
-    return getFile.sectionNumber === 0 && getFile.ChapterNumber === 5;
+    return getFile.fileName === 'furniture'   && getFile.articleNumber === 2;
   });
+//Contents
   const contents = Data.filter(function(getFile) {
     return getFile.sectionNumber === 0 && getFile.ChapterNumber === 6;
   });
+  //Section 1
   const section1Divider = Data.filter(function(getFile) {
     return (
       getFile.sectionNumber === 1 &&
@@ -125,15 +134,16 @@ export default function(props) {
     <section
       id='Book Container'
       className={'container-flex-columm page-width-' + props.bookFormat}>
-      <Page bookFormat={props.bookFormat} data={stylesExamples} />
+      {/* <Page bookFormat={props.bookFormat} data={stylesExamples} /> */}
       <PageNoPaddingImage bookFormat={props.bookFormat} data={frontCover} />
 
-      <DataSmy bookFormat={props.bookFormat} data={Data} />
+      {/* <DataSmy bookFormat={props.bookFormat} data={Data} /> */}
       <Page bookFormat={props.bookFormat} data={contents} />
+      <Page bookFormat={props.bookFormat} data={divider1} />
 
       <PageBlock bookFormat={props.bookFormat} data={StartedWithAmbo} />
       <PageBlock bookFormat={props.bookFormat} data={aboutTheBook} />
-      <PageBlock
+      <Page
         bookFormat={props.bookFormat}
         data={AdviceForYourStayThingsToBring}
       />
@@ -145,6 +155,8 @@ export default function(props) {
         bookFormat={props.bookFormat}
         data={AdviceForYourStayLeavingHospital}
       />
+
+<Page bookFormat={props.bookFormat} data={divider2} />
       <PageTableTwoColumn bookFormat={props.bookFormat} data={yourDetails} />
       <ComponentRepeater
         bookFormat={props.bookFormat}

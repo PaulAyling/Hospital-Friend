@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+
+    <title>DEMO</title>
+    <style type="text/css">
+      /* JUST IMPORTS , RESTS & MINIMAL DEFAULTS */
+      /* CSS reset */
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      .container-flex-column {
+        display: flex;
+        flex-direction: column;
+      }
+      .page-width-mobi {
+        min-width: 1072px;
+        max-width: 1072px;
+      }
+
+      .page-size-mobi {
+        min-height: 1505px;
+        max-height: 1505px;
+        min-width: 1072px;
+        max-width: 1072px;
+        border:solid blue 1px;
+      }
+      .pagebreak-before {
+        break-before: auto;
+      }
+      .pagebreak-1 {
+        break-before: avoid;
+      }
+      .pagebreak-1 {
+        break-before: always;
+      }
+      .pagebreak-2 {
+        break-before: all;
+      }
+      .pagebreak-3 {
+        break-before: avoid-page;
+      }
+      .pagebreak-4 {
+        break-before: page;
+      }
+      .pagebreak-5 {
+        break-before: left;
+      }
+      .pagebreak-6 {
+        break-before: recto;
+      }
+      .pagebreak-6 {
+        break-before: verso;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="container-flex-columm page-width-mobi">
+      <section class="new-page-1  page-size-mobi">
+        <h1>Page 1</h1>
+      </section>
+      <section class="new-page-2   page-size-mobi">
+        <h1>Page 2</h1>
+      </section>
+      <section class="new-page-3   page-size-mobi">
+        <h1>Page 3</h1>
+      </section>
+      <section class="new-page-4   page-size-mobi">
+        <h1>Page 4</h1>
+      </section>
+      <section class="new-page-5   page-size-mobi">
+        <h1>Page 5</h1>
+      </section>
+      <section class="new-page-6   page-size-mobi">
+        <h1>Page 6</h1>
+      </section>
+      <section class="new-page-6   page-size-mobi">
+        <h1>Page 7</h1>
+      </section>
+    </main>
+  </body>
+</html>

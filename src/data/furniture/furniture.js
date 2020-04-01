@@ -1,9 +1,7 @@
 import React, { Fragment } from 'react';
 const Furniture = [
   {
-    id: 0,
-    sectionNumber: 0,
-    ChapterNumber: 1,
+    fileName: 'furniture',
     articleNumber: 1,
     sectionName: 'Styling Template',
     containerStyling: '',
@@ -25,24 +23,21 @@ const Furniture = [
     )
   },
   {
-    id: 0,
-    sectionNumber: 0,
-    ChapterNumber: 5,
-    articleNumber: 1,
+    fileName: 'furniture',
+    articleNumber: 2,
     sectionName: 'Front Cover',
     containerStyling: '',
     article:
       'http://paulayling.me/wp-content/uploads/2019/02/hHandbookCover.png'
   },
   {
-    id: 3,
-    sectionNumber: 1,
-    ChapterNumber: 1,
+    fileName: 'furniture',
+    item: 'divider',
     articleNumber: 1,
     sectionName: 'Section 1: Divider',
     article: (
       <section>
-        <div className='container-book-divider container-flex-column-spacebetween'>
+        <div className='container-flex-column-spacebetween'>
           <h1>Section 1</h1>
           <img
             className='container-book-divider-img'
@@ -54,10 +49,9 @@ const Furniture = [
     )
   },
   {
-    id: 3,
-    sectionNumber: 2,
-    ChapterNumber: 1,
-    articleNumber: 1,
+    fileName: 'furniture',
+    item: 'divider',
+    articleNumber: 2,
     sectionName: 'Section 2: Divider',
     article: (
       <section>
@@ -71,7 +65,7 @@ const Furniture = [
         </div>
       </section>
     )
-  },
+  }
 ];
 
 export default Furniture;
