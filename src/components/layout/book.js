@@ -121,17 +121,17 @@ export default function(props) {
     return getFile.fileName === 'drugs' && getFile.articleNumber === 2;
   });
 
-  const yourDetailsNbr = 1;
-  const timelineNbr = 1;
-  const diaryNbr = 2;
-  const diagnosisNbr = 1;
-  const drugsNbr = 1;
+  // const yourDetailsNbr = 1;
+  // const timelineNbr = 1;
+  // const diaryNbr = 2;
+  // const diagnosisNbr = 1;
+  // const drugsNbr = 1;
 
-  // const yourDetailsNbr=3;
-  // const timelineNbr=3;
-  // const diaryNbr=30;
-  // const diagnosisNbr=3;
-  // const drugsNbr=3;
+  const yourDetailsNbr=3;
+  const timelineNbr=3;
+  const diaryNbr=30;
+  const diagnosisNbr=3;
+  const drugsNbr=3;
 
   return (
     <section

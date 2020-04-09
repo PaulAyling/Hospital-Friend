@@ -1,8 +1,8 @@
 @page{
-  width: 400px;
+  size:A3;
   background:gray;
-  .box{
-    background:blue;
+  @page-left{
+    contents:'this is some content'
   }
 }
 

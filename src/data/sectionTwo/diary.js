@@ -30,7 +30,7 @@ const Diary = [
       { c1: 'Thoughts or Questions:', c2: '' },
       { c1: ' ', c2: '' },
       { c1: ' ', c2: '' },
-      { c1: ' ', c2: '' }
+
     ],
     tableType: 'Diary'
   },
@@ -47,12 +47,11 @@ const Diary = [
       { c1: ' ', c2: '' },
       { c1: ' ', c2: '' },
       { c1: ' ', c2: '' },
-      { c1: '', c2: '' },
       { c1: ' ', c2: '' },
       { c1: ' ', c2: '' },
       { c1: ' ', c2: '' },
       { c1: ' ', c2: '' },
-      { c1: ' ', c2: '' }
+      { c1: ' ', c2: '' },
     ],
     tableType: 'Diary'
   },
